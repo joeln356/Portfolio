@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Code", monospace;
+    cursor: default;
+    user-select: none;
+    caret-color: transparent;
+}
+:root{
+    --fundo: #282d33;
+    --letra: #8d9195;
+    --destaque: #9651b4;
+    --fundo-letra: #ffffff;
+    --sombra: #000000c0;
+}
+h2{
+    font-weight: normal;
+}
+html, body {
+    height: 100%;
+    color: var(--letra);
+    background-color: var(--fundo);
+    position: relative;
+}
+.pontos-i{
+    position: absolute;
+    left: 3%;
+    top: 5%;
+    z-index: 11;
+}
+/*Estilo do menu (header)-> inicio*/
+header{
+    width: 100%;
+    display: flex;
+    position: relative;
+    gap: 35px;
+    justify-content: end;
+    align-items: center;
+    height: 80px;
+    font-size: 20px;
+    background-color: var(--fundo);
+    z-index: 10;
+    position: fixed;
+}
+.img-p{
+    position: absolute;
+    left: 80%;
+    bottom: -10%;
+}
+.header-inner {
+    display: flex;
+    gap: 35px;
+    padding-right: 150px;
+    position: relative;
+    
+}
+
+.header-inner > a{
+    text-decoration: none;
+    color: var(--letra);
+    font-weight: 500;
+    position: relative;
+}
+.nav ::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--destaque);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.nav:hover ::after{
+    width: 100%;
+}
+.edioma{
+    font-weight: 650;
+}
+/*Estilo do menu (header)-> fim*/
+
+/*Estilo do main (#inicio)-> inicio*/
+
+#inicio{
+   
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1.3fr 2fr;
+    grid-template-rows: 1fr;
+    
+    position: relative;
+}
+
+.perfil{
+   
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.perfil > p{
+    font-size: 20px;
+    font-weight: 450;
+}
+.intro{
+    text-align: center;
+    margin-top: 20px;
+}
+.botao{
+    display: inline-block;
+    margin-top: 30px;
+}
+.botao > button{
+    background-color: transparent;
+    padding: 7px 20px;
+    border: 1px solid;
+    border-color: var(--destaque);
+    color: var(--fundo-letra);
+    font-size: 15px;
+}
+.botao > button:hover{
+    background-color: var(--fundo);
+    font-size: 16px;
+    box-shadow: 10px 10px 20px  #181b1f9f;
+}
+.foto{
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background-image: url(/assets/img/perfil.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.text-roxo{
+    color: var(--destaque);
+}
+.texto > h1{
+    font-size: 80px;
+    font-weight: normal;
+}
+.texto > p {
+    margin-top: 35px;
+    font-size: 30px;
+}
+.texto > h1, span{
+    color: var(--fundo-letra);
+}
+
+/*Estilo do main (#inicio)-> Fim*/
+
+
+
+/*Inicio sobre-mim*/
+
+#sobre{
+    margin-top: 120px;
+    margin-left: 100px;
+    margin-right: 150px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.3fr 3fr;
+}
+.sobre-prof{
+    grid-column: 1/2;
+ 
+}
+.foto-prof{
+
+
+    grid-row: 1/2;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px var(--sombra);
+    width: 250px;
+    height: 250px;
+    background-image: url(/assets/img/perfil.png);
+    background-size: cover;
+    margin-bottom: 20px;
+}
+.sobre-prof > div > p {
+    font-weight: 500;
+    color: var(--destaque);
+}
+.sobre-prof > div > h3{
+    color: var(--fundo-letra);
+    font-weight: 600;
+}
+.sobremim{
+    grid-column: 2/3;
+}
+.sobremim > .titulo{
+    
+    color: var(--fundo-letra);
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+}
+.sobremim > p{ 
+    font-size: 20px;
+}
+.traco{
+    background-image: linear-gradient(to right, var(--destaque), var(--fundo));
+    height: 2px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.sobremim > p > a{
+    font-weight: 700; 
+    text-decoration: none; 
+    color: var(--letra);
+}
+.sobremim > p  a:hover{
+
+    text-decoration: underline;
+}
+/*Fim sobre mim*/
+/*Inicia skills*/
+#skills{
+    margin-top: 130px;
+    margin-left: 100px;
+    margin-right: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#skills > h2 {
+    align-self: flex-start;
+    color: var(--fundo-letra);
+    font-weight: 500;
+    position: relative;
+    padding-right: 20px;
+    display: inline-block; /* faz o ::after se posicionar relativo só ao texto */
+}
+#skills > h2::after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-color: var(--destaque);
+    height: 2px;
+    width: 200px;
+    margin-left: 20px;
+}
