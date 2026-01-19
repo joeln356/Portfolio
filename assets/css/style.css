@@ -168,6 +168,7 @@ header{
     position: relative;
     display: grid;
     grid-template-columns: 1.3fr 3fr;
+    margin-bottom: 100px;
 }
 .sobre-prof{
     grid-column: 1/2;
@@ -372,4 +373,21 @@ header{
     left: 93%;
     top: 73%;
     box-shadow: 2px 2px 5px var(--sombra);
+}
+
+.ponto-g-skill{
+    position: absolute;
+    left: 3%;
+    top: 30%;
+}
+.p-c{
+    
+    position: absolute;
+    left: 100%;
+    top: 62%;
+}
+.p-c2{
+    position: absolute;
+    left: 93%;
+    top: 45%;
 }
