@@ -346,3 +346,30 @@ header{
     grid-column: 4/5;
     grid-row: 2/3;
 }
+.quadrado-g{
+    position: absolute;
+    border: 1px solid var(--letra);
+    height: 30px;
+    width: 30px;
+    left: 107%;
+    top: 70%;
+    box-shadow: 2px 2px 5px var(--sombra)
+}
+.quadrado-p{
+    position: absolute;
+    border: 1px solid var(--letra);
+    height: 60px;
+    width: 60px;
+    left: 101%;
+    top: 35%;
+    box-shadow: 2px 2px 5px var(--sombra);
+}
+.quadrado-m{
+    position: absolute;
+    border: 1px solid var(--letra);
+    height: 45px;
+    width: 45px;
+    left: 93%;
+    top: 73%;
+    box-shadow: 2px 2px 5px var(--sombra);
+}
