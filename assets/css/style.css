@@ -76,6 +76,9 @@ header{
 .nav:hover ::after{
     width: 100%;
 }
+.nav:hover{
+    color: var(--fundo-letra);
+}
 .edioma{
     font-weight: 650;
 }
@@ -201,7 +204,7 @@ header{
 .sobremim > .titulo{
     
     color: var(--fundo-letra);
-    font-weight: 600;
+    font-weight: 450;
     margin-bottom: 20px;
     position: relative;
 }
@@ -390,4 +393,100 @@ header{
     position: absolute;
     left: 93%;
     top: 45%;
+}
+/*fim skills*/
+/*Inicia projetos*/
+#projetos{
+    margin-top: 130px;
+    margin-left: 100px;
+    margin-right: 150px;
+}
+.cabeca{
+    color: var(--fundo-letra);
+    display: flex;
+    justify-content: space-between;
+}
+.cabeca > button{
+    background-color: transparent;
+    border: none;
+    color: var(--letra);
+    text-shadow: 2px 2px 10px var(--sombra);
+    
+}
+.cabeca > h2::after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-color: var(--destaque);
+    height: 2px;
+    width: 500px;
+    margin-left: 20px;
+}
+.cabeca > button:hover{
+    color: var(--fundo-letra);
+    font-size: 1em;
+    text-shadow: 5px 5px 5px var(--sombra);
+}
+.cabeca h2{
+    font-weight: 450;
+}
+/*fim projetos*/
+/*Inicio contactos*/
+#contacto{
+    margin-top: 130px;
+    margin-left: 100px;
+    margin-right: 150px;
+
+}
+#contacto > h2{
+    color: var(--fundo-letra);
+    font-weight: 450;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+#contacto > h2::after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-color: var(--destaque);
+    height: 2px;
+    width: 350px;
+    margin-left: 20px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+.container > div{
+    border: 1px solid var(--letra);
+    padding: 20px;
+    width: fit-content;
+}
+.container > div > span > a{
+    color: var(--letra);
+    text-decoration: none;
+    margin-top: 10px;
+}
+.container > div > span > a:hover{
+    color: var(--fundo-letra);
+    font-weight: 500;
+}
+.fala{
+    color: var(--fundo-letra);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.container > div > span > i{
+    color: var(--letra);
+    font-size: 18px;
+}
+/*fim contactos*/
+
+/*Inicio footer*/
+footer{
+    margin-top: 130px;
+
+    border-top: 1px solid var(--letra);
+    text-align: center;
 }
