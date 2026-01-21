@@ -137,7 +137,7 @@ header{
     width: 330px;
     height: 330px;
     border-radius: 50%;
-    background-image: url(/assets/img/perfil.png);
+    background-image: url(../img/perfil.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -192,7 +192,7 @@ header{
     box-shadow: 5px 5px 20px var(--sombra);
     width: 250px;
     height: 250px;
-    background-image: url(../assets/img/perfil.png);
+    background-image: url(../img/perfil.png);
     background-size: cover;
     margin-bottom: 20px;
 }
