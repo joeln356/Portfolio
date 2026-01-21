@@ -368,6 +368,50 @@ header{
 .cabeca h2{
     font-weight: 450;
 }
+
+.projeto-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.projeto-container > div{
+    height: fit-content;
+    border: 1px solid var(--letra);
+}
+.proj-t{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.proj-t > h3{
+    padding: 10px 0px 5px 0px;
+    font-weight: 500;
+    color: var(--fundo-letra);
+}
+.proj-img{
+    height: 180px;
+    border-bottom: 1px solid var(--letra);
+    background-image: url(../img/defacement.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.proj-nametag{
+    border-bottom: 1px solid var(--letra);
+    padding: 5px;
+}
+.botao-ver{
+    border: 1px solid var(--destaque);
+    padding: 5px;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.botao-ver > a{
+    color: var(--fundo-letra);
+    text-decoration: none;
+    
+}
 /*fim projetos*/
 
 /*Inicio sobre-mim*/
