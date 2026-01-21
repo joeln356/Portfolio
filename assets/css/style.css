@@ -192,7 +192,7 @@ header{
     box-shadow: 5px 5px 20px var(--sombra);
     width: 250px;
     height: 250px;
-    background-image: url(/assets/img/perfil.png);
+    background-image: url(../assets/img/perfil.png);
     background-size: cover;
     margin-bottom: 20px;
 }
