@@ -44,11 +44,7 @@ header{
     z-index: 10;
     position: fixed;
 }
-.img-p{
-    position: absolute;
-    left: 80%;
-    bottom: -10%;
-}
+
 .header-inner {
     display: flex;
     gap: 35px;
@@ -90,8 +86,13 @@ header{
     display: flex;
     justify-content: center;
     position: relative;
+    height: 100vh;
 }
-
+.img-p{
+    position: absolute;
+    left: 80vw;
+    bottom: 10vh;
+}
 .inicio-container {
   display: grid;
   grid-template-columns: 1.3fr 2fr;
@@ -100,14 +101,15 @@ header{
   padding: 0 5%;
 }
 .perfil{
-    padding-top: clamp(6rem, 15vh, 18rem);
+    margin-top: 90px;
     grid-column: 1;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 .perfil > p{
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 450;
 }
 .intro{
@@ -232,6 +234,7 @@ header{
 }
 /*Fim sobre mim*/
 /*Inicia skills*/
+
 #skills{
     margin-top: 130px;
     margin-left: 100px;
@@ -241,6 +244,14 @@ header{
     flex-direction: column;
     align-items: center;
 }
+@media (min-width: 1367px) and (min-height: 769px) {
+  /* estilos que só aparecem em telas maiores que 1366x768 */
+  #skills {
+    margin-top: 0px;
+    /* outros ajustes para telas grandes */
+  }
+}
+
 #skills > h2 {
     align-self: flex-start;
     color: var(--fundo-letra);
