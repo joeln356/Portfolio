@@ -22,3 +22,14 @@ navlinks.forEach(link => {
   });
 });
 
+// mudar edioma
+
+function ShowEdiomas(){
+
+  if(ediomas.style.display == 'block'){
+    ediomas.style.display = 'none'
+  } else{
+    ediomas.style.display = 'block'
+  }
+
+}

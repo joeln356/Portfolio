@@ -80,7 +80,23 @@ header{
     color: var(--fundo-letra);
 }
 .edioma{
-    font-weight: 650;
+    font-weight: 450;
+    background-color: transparent;
+    color: var(--letra);
+    font-size: 20px;
+    border: none;
+    position: relative;
+}
+#ediomas{
+    border: 1px solid var(--letra);
+    width: fit-content;
+    position: absolute;
+    text-align: center;
+    padding: 0px 5px;
+    margin-left: 15px;
+    box-shadow: 3px 3px 10px #121416;
+    display: none;
+    
 }
 /*Estilo do menu (header)-> fim*/
 
