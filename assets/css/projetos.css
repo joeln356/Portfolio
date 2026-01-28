@@ -1,0 +1,78 @@
+/* #projetos{
+    margin-top: 130px;
+    margin-left: 100px;
+    margin-right: 150px;
+}
+.cabeca{
+    color: var(--fundo-letra);
+    display: flex;
+    justify-content: space-between;
+}
+.cabeca > button{
+    background-color: transparent;
+    border: none;
+    color: var(--letra);
+    text-shadow: 2px 2px 10px var(--sombra);
+    
+}
+.cabeca > h2::after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-color: var(--destaque);
+    height: 2px;
+    width: 500px;
+    margin-left: 20px;
+}
+.cabeca > button:hover{
+    color: var(--fundo-letra);
+    font-size: 1em;
+    text-shadow: 5px 5px 5px var(--sombra);
+}
+.cabeca h2{
+    font-weight: 450;
+}
+
+.projeto-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.projeto-container > div{
+    height: fit-content;
+    border: 1px solid var(--letra);
+}
+.proj-t{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.proj-t > h3{
+    padding: 10px 0px 5px 0px;
+    font-weight: 500;
+    color: var(--fundo-letra);
+}
+.proj-img{
+    height: 180px;
+    border-bottom: 1px solid var(--letra);
+    background-image: url(../img/defacement.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.proj-nametag{
+    border-bottom: 1px solid var(--letra);
+    padding: 5px;
+}
+.botao-ver{
+    border: 1px solid var(--destaque);
+    padding: 5px;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.botao-ver > a{
+    color: var(--fundo-letra);
+    text-decoration: none;
+    
+} */

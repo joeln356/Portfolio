@@ -23,13 +23,9 @@ navlinks.forEach(link => {
 });
 
 // mudar edioma
+const btn = document.getElementById("btn-edioma");
+const lista = document.getElementById("ediomas");
 
-function ShowEdiomas(){
-
-  if(ediomas.style.display == 'block'){
-    ediomas.style.display = 'none'
-  } else{
-    ediomas.style.display = 'block'
-  }
-
-}
+btn.addEventListener("click", () => {
+    lista.classList.toggle("show");
+});

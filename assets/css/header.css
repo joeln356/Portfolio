@@ -1,0 +1,133 @@
+/* header{
+    width: 100%;
+    display: flex;
+    position: relative;
+    gap: 35px;
+    justify-content: end;
+    align-items: center;
+    height: 80px;
+    font-size: 20px;
+    background-color: var(--fundo);
+    z-index: 10;
+    position: fixed;
+}
+
+.img-p{
+    position: absolute;
+    left: 80%;
+    bottom: -10%;
+}
+.header-inner {
+    display: flex;
+    gap: 35px;
+    padding-right: 150px;
+    position: relative;
+    
+}
+
+.header-inner > a{
+    text-decoration: none;
+    color: var(--letra);
+    font-weight: 500;
+    position: relative;
+}
+.nav ::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--destaque);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.nav:hover ::after{
+    width: 100%;
+}
+.nav:hover{
+    color: var(--fundo-letra);
+}
+.edioma{
+    font-weight: 450;
+    background-color: transparent;
+    color: var(--letra);
+    font-size: 20px;
+    border: none;
+    position: relative;
+}
+
+#ediomas {
+    border: 1px solid var(--letra);
+    width: fit-content;
+    position: absolute;
+    text-align: center;
+    padding: 0px 5px;
+    margin-left: 15px;
+    box-shadow: 3px 3px 10px #121416;
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+#ediomas.show {
+    max-height: 200px;
+    opacity: 1;
+}
+ */
+.edioma{
+    font-weight: 450;
+    background-color: transparent;
+    color: var(--letra);
+    font-size: 20px;
+    border: none;
+    position: relative;
+}
+#logo{
+    display: none;
+}
+.menu-btn{
+    display: none;
+}
+
+ @media screen and (orientation: portrait) {
+    .header-inner > a{
+        display: none;
+    }
+    header{
+        gap: 0;  
+        background-color: var(--fundo);
+        padding: 20px;
+    }
+    .header-inner{
+        display: grid;
+        grid-template-columns: 2fr 1fr ;
+        
+    }
+    #logo{
+        grid-column: 1;
+        color: var(--fundo-letra);
+        font-size: 1.25rem;
+        display: block;
+    }
+    .edioma{
+        font-size: 16px;
+        color: var(--fundo-letra);
+    }
+    .head-d{
+        justify-content: end;
+        grid-column: 2;
+        display: flex;
+        gap: 25px;
+    }
+    .menu-btn{
+        display: block;
+        font-size: 1.25rem;
+        color: var(--fundo-letra);
+    }
+
+    .menu{
+
+    }
+ }

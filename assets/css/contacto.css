@@ -1,0 +1,60 @@
+/* 
+#contacto{
+    margin-top: 130px;
+    margin-left: 100px;
+    margin-right: 150px;
+    position: relative;
+
+}
+
+.cont-q{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--letra);
+    left: -15%;
+    top: 70%;
+}
+#contacto > h2{
+    color: var(--fundo-letra);
+    font-weight: 450;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+#contacto > h2::after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-color: var(--destaque);
+    height: 2px;
+    width: 350px;
+    margin-left: 20px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+.container > div{
+    border: 1px solid var(--letra);
+    padding: 20px;
+    width: fit-content;
+}
+.container > div > span > a{
+    color: var(--letra);
+    text-decoration: none;
+    margin-top: 10px;
+}
+.container > div > span > a:hover{
+    color: var(--fundo-letra);
+    font-weight: 500;
+}
+.fala{
+    color: var(--fundo-letra);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.container > div > span > i{
+    color: var(--letra);
+    font-size: 18px;
+} */

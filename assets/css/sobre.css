@@ -1,0 +1,63 @@
+/* 
+#sobre{
+    margin-top: 120px;
+    margin-left: 100px;
+    margin-right: 150px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.3fr 3fr;
+    margin-bottom: 100px;
+}
+.sobre-prof{
+    grid-column: 1/2;
+ 
+}
+.foto-prof{
+
+
+    grid-row: 1/2;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px var(--sombra);
+    width: 250px;
+    height: 250px;
+    background-image: url(/assets/img/perfil.png);
+    background-size: cover;
+    margin-bottom: 20px;
+}
+.sobre-prof > div > p {
+    font-weight: 500;
+    color: var(--destaque);
+}
+.sobre-prof > div > h3{
+    color: var(--fundo-letra);
+    font-weight: 600;
+}
+.sobremim{
+    grid-column: 2/3;
+}
+.sobremim > .titulo{
+    
+    color: var(--fundo-letra);
+    font-weight: 450;
+    margin-bottom: 20px;
+    position: relative;
+}
+.sobremim > p{ 
+    font-size: 20px;
+}
+.traco{
+    background-image: linear-gradient(to right, var(--destaque), var(--fundo));
+    height: 2px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.sobremim > p > a{
+    font-weight: 700; 
+    text-decoration: none; 
+    color: var(--letra);
+}
+.sobremim > p  a:hover{
+
+    text-decoration: underline;
+} */

@@ -1,0 +1,85 @@
+/* 
+#inicio{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.inicio-container {
+  display: grid;
+  grid-template-columns: 1.3fr 2fr;
+  width: 100%;
+
+  padding: 0 5%;
+}
+.perfil{
+    padding-top: clamp(6rem, 15vh, 18rem);
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.perfil > p{
+    font-size: 20px;
+    font-weight: 450;
+}
+.intro{
+    text-align: center;
+    margin-top: 20px;
+}
+.botao{
+    display: inline-block;
+    margin-top: 30px;
+}
+.botao > button{
+    background-color: transparent;
+    padding: 7px 20px;
+    border: 1px solid;
+    border-color: var(--destaque);
+    color: var(--fundo-letra);
+    font-size: 15px;
+}
+.botao > a {
+    text-decoration: none;
+    padding: 7px 20px;
+    border: 1px solid;
+    border-color: var(--destaque);
+    color: var(--fundo-letra);
+    font-size: 15px;
+}
+.botao > button:hover, .botao > a:hover{
+    background-color: var(--fundo);
+    font-size: 16px;
+    box-shadow: 10px 10px 20px  #181b1f9f;
+}
+.foto{
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background-image: url(/assets/img/perfil.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+}
+.text-roxo{
+    color: var(--destaque);
+}
+.texto > h1{
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: normal;
+}
+.texto > p {
+    margin-top: 30px;
+    font-size: 30px;
+}
+.texto > h1, span{
+    color: var(--fundo-letra);
+} */
