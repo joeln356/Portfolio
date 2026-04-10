@@ -6,10 +6,19 @@
 
 *{
     font-family: var(--font-Geral);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 :root{
     --font-Geral: "Sora", sans-serif;;
     --font-terminal: "Fira Code", monospace;;
     --font-title: "Chakra Petch", sans-serif;;
+    --destaque-G:#3CFF14;
+    --destaque-A: #00EEFF;
 }
+body{
+    padding: 0px 15px;
+}
+

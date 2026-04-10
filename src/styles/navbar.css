@@ -1,0 +1,60 @@
+
+#logo{
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ccc;
+    z-index: 2;
+}
+.destaque-g{
+    color: var(--destaque-G);
+    font-family: var(--font-title);
+    padding: 0px;
+}
+.fa-terminal{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--destaque-G);
+}
+
+#logo:active .destaque-g,
+#logo:active .fa-terminal{
+    color: var(--destaque-A);
+}
+
+.nav-li{
+    font-family: var(--font-terminal);
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn-menu{
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.linha{
+    height: 3.5px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    border-radius: 10px;
+
+}
+#MENU{
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+}
