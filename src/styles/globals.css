@@ -9,6 +9,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    user-select: none;
 }
 
 :root{
@@ -17,8 +18,7 @@
     --font-title: "Chakra Petch", sans-serif;;
     --destaque-G:#3CFF14;
     --destaque-A: #00EEFF;
+    --normal-texto: #94a3b8;
+    --borda-inferior-menu-mobile: #13232f;
+    --bg-menu: #050b0ff2;
 }
-body{
-    padding: 0px 15px;
-}
-

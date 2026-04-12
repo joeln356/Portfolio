@@ -32,7 +32,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
+    padding: 0px 15px;
+    height: 50px;
 }
 
 #btn-menu{
@@ -45,6 +46,7 @@ nav{
     border: none;
     background-color: transparent;
     cursor: pointer;
+    
 }
 #btn-menu.ativar .linha:nth-child(1){
     transform: translateY(7px) rotate(-45deg);
@@ -67,6 +69,132 @@ nav{
 
 #MENU{
     opacity: 0;
+    pointer-events: none;
+    background-color: var(--bg-menu);
+    width: 100%;
     position: absolute;
-    z-index: 0;
+    top: 40px;
+    left: 0;        
+    right: 0;       
+    width: 100%; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 10;
+    border-bottom: 2px solid var(--borda-inferior-menu-mobile);
+    transition: 0.2s;
+}
+#MENU.show-menu{
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    top: 50px;
+}
+#MENU > ul{
+    padding: 10px 15px;
+}
+#MENU > ul > li{
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    color: var(--normal-texto);
+    transition: background-color 0.2s;
+}
+#MENU > ul > li:hover{
+    background-color: var(--borda-inferior-menu-mobile);
+}
+#MENU > ul > li:active{
+    color: var(--destaque-G);
+    border-left: 2px solid var(--destaque-G);
+    background-color: rgba(60, 255, 20, 0.05); 
+    position: relative;
+    transition: none !important;
+}
+.barra{
+    color: var(--destaque-G);
+    font-weight: 300;
+}
+@media screen and (min-width: 1024px) {
+
+    #btn-menu {
+        display: none;
+    }
+
+    .barra {
+        color: var(--destaque-G);
+        font-weight: 500;
+    }
+
+    nav {
+        padding: 0 100px;
+        height: 70px;
+    }
+
+    /* Reset básico */
+    #MENU {
+        all: unset;
+        opacity: 1;
+        pointer-events: auto;
+        position: static;
+        background-color: transparent;
+        border: none;
+        font-size: 0.9rem;
+    }
+
+    #MENU > ul {
+        all: unset;
+        display: flex;
+        gap: 20px;           /* espaço entre os itens - ajuste como quiser */
+        padding: 0;
+        margin: 0;
+    }
+
+    #MENU > ul > li {
+        all: unset;
+        color: var(--normal-texto);
+        position: relative;           /* ← ESSENCIAL para o ::after funcionar */
+        padding: 8px 0;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        
+
+    }
+
+    /* Hover normal */
+    #MENU > ul > li:hover {
+        color: #fff;
+        background-color: transparent;
+        transition: none;
+    }
+
+    /* Efeito da barra inferior (underline animado) */
+    #MENU > ul > li::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: var(--destaque-G);
+    }
+
+    #MENU > ul > li:active::after {
+        width: 100%;
+    }
+
+    /* Active (opcional) */
+    #MENU > ul > li:active {
+        border: none;
+        text-shadow: 1px 1px 20px var(--destaque-G);
+    }
+}
+@media screen and (min-width: 1280px) {
+    #MENU{
+        font-size: 0.95rem;
+    }
+    #MENU > ul {
+        gap: 40px;
+    }
+     #MENU > ul > li::after {
+        height: 2.5px;
+    }
 }
