@@ -44,6 +44,8 @@
 }
 #hero-button > button{
     padding: 7px 20px;
+    cursor: pointer;
+    font-family: var(--font-terminal);
 }
 #btn-verPorjetos{
     color: var(--destaque-G);
@@ -120,7 +122,34 @@
 .fa-download{
     margin-left: 10px;
 }
+#anima-scroll{
+    color: var(--normal-texto);
+    font-family: var(--font-terminal);
+    font-size: 0.77rem;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 2%;
+    transform: translateX(-50%);
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#anima-scroll > div{
+    margin-top: 5px;
+    width: 1px;
+    height: 40px;
+    background-color: var(--normal-texto);
+}
 @media screen and (min-width: 1024px) {
+    #anima-scroll{
+        color: var(--normal-texto);
+        font-family: var(--font-terminal);
+        font-size: 0.77rem;
+        text-align: center;
+        margin-top: 50px;
+    }
     #hero-fundo{
         padding: 0px 100px;
     }

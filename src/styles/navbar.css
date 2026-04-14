@@ -100,6 +100,7 @@ nav{
     margin-bottom: 8px;
     color: var(--normal-texto);
     transition: background-color 0.2s;
+    
 }
 #MENU > ul > li:active{
     color: var(--destaque-G);
@@ -153,6 +154,7 @@ nav{
         padding: 8px 0;
         cursor: pointer;
         transition: color 0.3s ease;
+        font-family: var(--font-terminal);
     }
 
     /* Hover normal */

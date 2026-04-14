@@ -12,49 +12,45 @@
             border: 1px solid #1e3a5f;
             background: #0b1a2a;
         }
-
-/* canto superior esquerdo */
-.container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid #3aa0ff;
-  border-left: 2px solid #3aa0ff;
-}
-
-/* canto inferior direito */
-.container::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 10px;
-  height: 10px;
-  border-bottom: 2px solid #3aa0ff;
-  border-right: 2px solid #3aa0ff;
-}
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #3aa0ff;
+            border-left: 2px solid #3aa0ff;
+        }
+        .container::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            border-bottom: 2px solid #3aa0ff;
+            border-right: 2px solid #3aa0ff;
+        }
         .corner {
             position: absolute;
             width: 10px;
             height: 10px;
-            }
+        }
 
-            .top-right {
+        .top-right {
             top: 0;
             right: 0;
             border-top: 2px solid #3aa0ff;
             border-right: 2px solid #3aa0ff;
-            }
+        }
 
-            .bottom-left {
+        .bottom-left {
             bottom: 0;
             left: 0;
             border-bottom: 2px solid #3aa0ff;
             border-left: 2px solid #3aa0ff;
-            }
+        }
     </style>
 </head>
 <body>
