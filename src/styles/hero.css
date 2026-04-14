@@ -1,0 +1,163 @@
+#HOME{
+    background-image: url(../../public/images/brHero.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+#hero-fundo{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #050b0fe9 50%, #050b0fdf 80%, #050b0f 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    justify-content: center;
+}
+#terminal{
+    color: var(--destaque-G);
+    font-weight: 400;
+    font-size: 0.75rem;
+    background-color: var(--fundo-destaque-G);
+    border: 1px solid;
+    width: fit-content;
+    padding: 3px 10px;
+    font-family: var(--font-terminal);
+}
+#titulo{
+    font-size: 3rem;
+    color: #fff;
+    font-family: var(--font-title);
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#hero-texto{
+    color: var(--normal-texto);
+    margin-bottom: 35px;
+    font-family: var(--font-terminal);
+}
+#hero-texto > span{
+    color: #fff;
+}
+#hero-button{
+    display: flex;
+    gap: 10px;
+}
+#hero-button > button{
+    padding: 7px 20px;
+}
+#btn-verPorjetos{
+    color: var(--destaque-G);
+    border: 1px solid ;
+    background-color: var(--fundo-destaque-G);
+    position: relative;
+}
+#btn-verPorjetos::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+}
+#btn-verPorjetos::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 3px;
+    height: 3px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+}
+.corner {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+}
+.top-right {
+    top: 0;
+    right: 0;
+    border-top: 2px solid;
+    border-right: 2px solid;
+}
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+}
+#btn-baixarcv{
+    color: var(--destaque-A);
+    background-color: var(--fundo-destaque-A);
+    border: 1px solid;
+    position: relative;
+}
+#btn-baixarcv::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+}
+#btn-baixarcv::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 3px;
+    height: 3px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+}
+.fa-arrow-right{
+    margin-left: 5px;
+}
+.fa-download{
+    margin-left: 10px;
+}
+@media screen and (min-width: 1024px) {
+    #hero-fundo{
+        padding: 0px 100px;
+    }
+    #terminal{
+        font-size: 0.95rem;
+        background-color: var(--fundo-destaque-G);
+        border: 1px solid;
+        width: fit-content;
+        padding: 3px 10px;
+        font-family: var(--font-terminal);
+    }
+    .sla-mano{
+        width: 70%;
+    }
+    #titulo{
+        font-size: 4rem;
+    }
+    #hero-texto{
+        font-size: 1.4rem;
+        width: 90%;
+    }
+    #btn-verPorjetos{
+        font-size: 1.1rem;
+    }
+    #btn-baixarcv{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (min-width: 1280px){
+    .sla-mano{
+        width: 80%;
+    }
+    #titulo{
+        font-size: 5.5rem;
+    }
+    #hero-texto{
+        font-size: 1.5rem;
+        width: 70%;
+    }
+}

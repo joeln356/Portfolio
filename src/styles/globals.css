@@ -10,6 +10,7 @@
     padding: 0;
     margin: 0;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 :root{
@@ -21,4 +22,7 @@
     --normal-texto: #94a3b8;
     --borda-inferior-menu-mobile: #13232f;
     --bg-menu: #050b0ff2;
+    --fundo: #050b0f;
+    --fundo-destaque-G: #3cff140d;
+    --fundo-destaque-A: #00EEFF0d;
 }
