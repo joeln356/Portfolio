@@ -30,6 +30,12 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
+#titulo > span{
+    font-family: var(--font-title);
+    background-image: linear-gradient(to right, var(--destaque-G)1%, var(--destaque-A));
+    color: transparent;
+    -webkit-background-clip: text;
+}
 #hero-texto{
     color: var(--normal-texto);
     margin-bottom: 35px;
