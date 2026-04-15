@@ -116,6 +116,17 @@
     border-bottom: 2px solid;
     border-right: 2px solid;
 }
+#btn-baixarcv:active{
+    background-color: #00eeff47;
+    transform: scale(0.97);
+}
+#btn-verPorjetos:active{
+    background-color: #3cff1447;
+    transform: scale(0.97);
+}
+#btn-verPorjetos:active .fa-arrow-right{
+    transform: translateX(5px);
+}
 .fa-arrow-right{
     margin-left: 5px;
 }
@@ -141,6 +152,32 @@
     width: 1px;
     height: 40px;
     background-color: var(--normal-texto);
+    overflow: hidden;
+    position: relative;
+    
+}
+#anima-scroll > div > .barra-scroll{
+    position: absolute;
+    background-color: var(--destaque-G);
+    width: 100%;
+    height: 55%;
+    animation: scroll-anima 2s ease-out infinite;
+}
+@keyframes scroll-anima {
+    0% {
+        top: -60px;                    /* começa fora de cima */
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;                    /* aparece rapidamente */
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        top: 100%;                     /* vai até o final da div (e um pouco além) */
+        opacity: 0;                    /* desaparece embaixo */
+    }
 }
 @media screen and (min-width: 1024px) {
     #anima-scroll{
@@ -177,6 +214,7 @@
     #btn-baixarcv{
         font-size: 1.1rem;
     }
+    
 }
 @media screen and (min-width: 1280px){
     .sla-mano{
