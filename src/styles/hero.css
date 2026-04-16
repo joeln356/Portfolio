@@ -172,18 +172,18 @@
 
 @keyframes scroll-anima {
     0% {
-        top: -60px;                    /* começa fora de cima */
+        top: -60px;                  
         opacity: 0;
     }
     10% {
-        opacity: 1;                    /* aparece rapidamente */
+        opacity: 1;                  
     }
     90% {
         opacity: 1;
     }
     100% {
-        top: 100%;                     /* vai até o final da div (e um pouco além) */
-        opacity: 0;                    /* desaparece embaixo */
+        top: 100%;                   
+        opacity: 0;                  
     }
 }
 @media screen and (min-width: 1024px) {

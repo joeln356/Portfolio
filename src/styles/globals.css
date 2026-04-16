@@ -38,6 +38,14 @@ body{
     font-size: 1.5rem;
     color: #fff;
 }
+@media screen and (min-width: 1024px) {
+    .nTitle > .title {
+        font-size: 2rem;
+    }
+    .nTitle {
+        font-size: 1.5rem;
+    }
+}
 .nTitle {
     font-family: var(--font-terminal);
     font-weight: normal;
