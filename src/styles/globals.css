@@ -25,6 +25,9 @@
     --fundo: #050b0f;
     --fundo-destaque-G: #3cff140d;
     --fundo-destaque-A: #00EEFF0d;
+    --cor1: #091119;
+    --cor2: #fff;
+    --cor3:#EF4444;
 }
 body{
     background-color: var(--fundo);
@@ -53,4 +56,9 @@ body{
     left: 0;
     width: 65px;
     height: 4px;
+}
+.cornerr {
+    position: absolute;
+    width: 7px;
+    height: 7px;
 }

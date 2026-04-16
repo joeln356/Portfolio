@@ -169,6 +169,7 @@
     height: 55%;
     animation: scroll-anima 2s ease-out infinite;
 }
+
 @keyframes scroll-anima {
     0% {
         top: -60px;                    /* começa fora de cima */
