@@ -32,7 +32,7 @@
 }
 #titulo > span{
     font-family: var(--font-title);
-    background-image: linear-gradient(to right, var(--destaque-G)1%, var(--destaque-A));
+    background-image: linear-gradient(to right, var(--destaque-G),var(--destaque-A));
     color: transparent;
     -webkit-background-clip: text;
 }

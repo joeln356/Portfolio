@@ -1,0 +1,6 @@
+#HABILIDADES > header > .corN{
+    color: var(--destaque-A);
+}
+#HABILIDADES .nTitle::after {
+    background-color: var(--destaque-A);
+}

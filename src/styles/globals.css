@@ -26,3 +26,31 @@
     --fundo-destaque-G: #3cff140d;
     --fundo-destaque-A: #00EEFF0d;
 }
+body{
+    background-color: var(--fundo);
+}
+.nTitle > .title {
+    font-family: var(--font-title);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.nTitle {
+    font-family: var(--font-terminal);
+    font-weight: normal;
+    font-size: 1rem;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    
+}
+.nTitle::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 65px;
+    height: 4px;
+}

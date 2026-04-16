@@ -1,0 +1,22 @@
+#SOBRE{
+    margin-top: 150px;
+    padding: 0px 15px;
+
+}
+#SOBRE .nTitle::after {
+    background-color: var(--destaque-G);
+    box-shadow: 0 0 12px 3px #3cff1426;
+}
+#SOBRE > header > .corN{
+    color: var(--destaque-G);
+}
+.descricao{
+    color: var(--normal-texto);
+    margin-top: 50px;
+}
+@media screen and (min-width: 1024px) {
+    #SOBRE{
+        padding: 0px 100px;
+        height: 100vh;
+    }
+}

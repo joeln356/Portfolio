@@ -150,7 +150,7 @@ nav{
     #MENU > ul > li {
         all: unset;
         color: var(--normal-texto);
-        position: relative;           /* ← ESSENCIAL para o ::after funcionar */
+        position: relative; 
         padding: 8px 0;
         cursor: pointer;
         transition: color 0.3s ease;
