@@ -62,7 +62,7 @@
 .header{
     display: flex;
     justify-content: space-between;
-    font-size: 13px;
+    font-size: 0.8125rem;
     margin-top: 20px;
 }
 .nome{
@@ -108,5 +108,30 @@
     #HABILIDADES{
         padding: 0px 100px;
         margin-top: 0px;
+        height: 90vh;
+    }
+    .skill-container:nth-child(1){
+        margin-bottom: 0px;
+    }
+    .skill-container:nth-child(1):hover{
+        border: 1px solid var(--destaque-G);
+        box-shadow: 0 0 10px 2px #3bff146c;
+    }
+    .skill-container:nth-child(2):hover{
+        border: 1px solid #00EEFF;
+        box-shadow: 0 0 10px 2px #00eeff65;
+    }
+    .container-skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .skill-header{
+        font-size: 1.40rem;
+    }
+    .header{
+        font-size: 0.985rem;
     }
 }
