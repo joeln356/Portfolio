@@ -110,7 +110,7 @@ nav{
     position: relative;
     transition: none !important;
 }
-.barra{
+.menu-barra{
     color: var(--destaque-G);
     font-weight: 500;
 }
@@ -120,7 +120,7 @@ nav{
         display: none;
     }
 
-    .barra {
+    .menu-barra {
         color: var(--destaque-G);
         font-weight: 500;
     }
