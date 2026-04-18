@@ -56,6 +56,9 @@
 .fa-code{
     color: var(--destaque-G);
 }
+.fa-shield-halved{
+    color: var(--destaque-A);
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -70,6 +73,10 @@
     font-family: var(--font-terminal);
     color: var(--destaque-G);
 }
+.percentagem-hacker{
+    font-family: var(--font-terminal);
+    color: var(--destaque-A);
+}
 .barra{
     margin-top: 10px;
     height: 6px;
@@ -82,10 +89,24 @@
     height: 100%;
     background-color: var(--destaque-G);
 }
+.barra-percentagem-hacker{
+    height: 100%;
+    background-color: var(--destaque-A);
+}
+.skill-container:nth-child(1){
+    margin-bottom: 25px ;
+    border: 1px solid #3bff145b;
+    box-shadow: 0 0 10px 2px #3cff1426;
+    transition: 0.2s;
+}
+.skill-container:nth-child(2){
+    border: 1px solid #00EEFF5b;
+    box-shadow: 0 0 10px 2px #00EEFF26;
+    transition: 0.2s;
+}
 @media screen and (min-width:1024px) {
     #HABILIDADES{
         padding: 0px 100px;
         margin-top: 0px;
-        height: 90vh;
     }
 }
