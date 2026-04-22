@@ -1,27 +1,26 @@
-
 #logo{
     font-family: var(--font-title);
     font-size: 1.5rem;
     font-weight: 900;
     cursor: pointer;
     text-decoration: none;
-    color: #fff;
+    color: var(--texto-secundario);
     z-index: 2;
 }
 .destaque-g{
-    color: var(--destaque-G);
+    color: var(--cor02);
     font-family: var(--font-title);
     padding: 0px;
 }
 .logo-terminal{
     font-size: 1.2rem;
     font-weight: 700;
-    color: var(--destaque-G);
+    color: var(--cor02);
 }
 
 #logo:active .destaque-g,
 #logo:active .fa-terminal{
-    color: var(--destaque-A);
+    color: var(--cor01);
 }
 
 .nav-li{
@@ -63,7 +62,7 @@ nav{
 .linha{
     height: 3px;
     width: 100%;
-    background-color: var(--destaque-G);
+    background-color: var(--cor02);
     display: block;
     border-radius: 10px;
     position: relative;
@@ -84,7 +83,7 @@ nav{
     margin: 0;
     box-sizing: border-box;
     z-index: 10;
-    border-bottom: 2px solid var(--borda-inferior-menu-mobile);
+    border-bottom: 2px solid var(--cor04-borda);
     transition: 0.2s;
 }
 #MENU.show-menu{
@@ -99,19 +98,17 @@ nav{
     cursor: pointer;
     padding: 10px 15px;
     margin-bottom: 8px;
-    color: var(--normal-texto);
     transition: background-color 0.2s;
-    
 }
 #MENU > ul > li:active{
-    color: var(--destaque-G);
-    border-left: 3px solid var(--destaque-G);
+    color: var(--cor02);
+    border-left: 3px solid var(--cor02);
     background-color: rgba(60, 255, 20, 0.05); 
     position: relative;
     transition: none !important;
 }
 .menu-barra{
-    color: var(--destaque-G);
+    color: var(--cor02);
     font-weight: 500;
 }
 @media screen and (min-width: 1024px) {
@@ -119,17 +116,14 @@ nav{
     #btn-menu {
         display: none;
     }
-
     .menu-barra {
-        color: var(--destaque-G);
+        color: var(--cor02);
         font-weight: 500;
     }
-
     nav {
         padding: 0 100px;
         height: 70px;
     }
-
     #MENU {
         all: unset;
         opacity: 1;
@@ -139,7 +133,6 @@ nav{
         border: none;
         font-size: 0.9rem;
     }
-
     #MENU > ul {
         all: unset;
         display: flex;
@@ -147,24 +140,20 @@ nav{
         padding: 0;
         margin: 0;
     }
-
     #MENU > ul > li {
         all: unset;
-        color: var(--normal-texto);
         position: relative; 
         padding: 8px 0;
         cursor: pointer;
         transition: color 0.3s ease;
         font-family: var(--font-terminal);
     }
-
     /* Hover normal */
     #MENU > ul > li:hover {
         color: #fff;
         background-color: transparent;
         transition: none;
     }
-
     /* Efeito da barra inferior (underline animado) */
     #MENU > ul > li::after {
         content: "";
@@ -173,7 +162,7 @@ nav{
         left: 0;
         width: 0%;
         height: 2px;
-        background-color: var(--destaque-G);
+        background-color: var(--cor02);
     }
 
     #MENU > ul > li:active::after {
@@ -183,7 +172,7 @@ nav{
     /* Active (opcional) */
     #MENU > ul > li:active {
         border: none;
-        text-shadow: 1px 1px 20px var(--destaque-G);
+        text-shadow: 1px 1px 20px var(--cor02);
     }
 }
 @media screen and (min-width: 1280px) {

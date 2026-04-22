@@ -1,19 +1,21 @@
+
 #HABILIDADES{
-    border-top: 1px solid #13232F;
+    border-top: 1px solid var(--cor04-borda);
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 50px 15px;
-    background-color: var(--cor1);
-    border-bottom: 1px solid #13232F;
+    background-color: var(--bg2);
+    border-bottom: 1px solid var(--cor04-borda);
     
 }
 #HABILIDADES > header > .corN{
-    color: var(--destaque-A);
+    color: var(--cor01);
 }
 #HABILIDADES .nTitle::after {
-    background-color: var(--destaque-A);
+    background-color: var(--cor01);
+    box-shadow: 0 0 12px 3px var(--cor01-brilho);
 }
 .container-skills{
     margin-top: 50px;
@@ -21,7 +23,6 @@
 .skill-container{
     padding: 15px;
     border: 1px solid;
-    color: #94a3b867;
     position: relative;
 }
 .skill-container::before{
@@ -31,8 +32,32 @@
     left: 0;
     width: 5px;
     height: 5px;
-    border-top: 2px solid var(--normal-texto);
-    border-left: 2px solid var(--normal-texto);
+    border-top: 2px solid;
+    border-left: 2px solid;
+}
+.skill-container:nth-child(1)::before{
+    color: var(--cor02);
+}
+.skill-container:nth-child(1)::after{
+    color: var(--cor02);
+}
+.skill-container:nth-child(1) > .top-right{
+    color: var(--cor02);
+}
+.skill-container:nth-child(1) > .bottom-left{
+    color: var(--cor02);
+}
+.skill-container:nth-child(2)::before{
+    color: var(--cor01);
+}
+.skill-container:nth-child(2)::after{
+    color: var(--cor01);
+}
+.skill-container:nth-child(2) > .top-right{
+    color: var(--cor01);
+}
+.skill-container:nth-child(2) > .bottom-left{
+    color: var(--cor01);
 }
 .skill-container::after{
     content: "";
@@ -41,23 +66,20 @@
     right: 0;
     width: 5px;
     height: 5px;
-    border-bottom: 2px solid var(--normal-texto);
-    border-right: 2px solid var(--normal-texto);
+    border-bottom: 2px solid;
+    border-right: 2px solid;
 }
 .skill-header{
-    color: var(--cor2);
+    color: var(--texto-secundario);
     font-family: var(--font-title);
     font-weight: bolder;
     font-size: 1.10rem;
-    background-color: #0e1a23a8;
+    background-color: var(--bg3);
     margin: -15px;
     padding: 15px;
 }
-.fa-code{
-    color: var(--destaque-G);
-}
 .fa-shield-halved{
-    color: var(--destaque-A);
+    color: var(--cor01);
 }
 .header{
     display: flex;
@@ -67,58 +89,57 @@
 }
 .nome{
     font-family: var(--font-terminal);
-    color: var(--normal-texto);
 }
 .percentagem{
     font-family: var(--font-terminal);
-    color: var(--destaque-G);
+    color: var(--cor02);
 }
 .percentagem-hacker{
     font-family: var(--font-terminal);
-    color: var(--destaque-A);
+    color: var(--cor01);
 }
 .barra{
     margin-top: 10px;
     height: 6px;
     width: 100%;
-    color: #94a3b836;
+    color: var(--cor04-borda);
     border: 1px solid;
-    background-color: var(--fundo);
+    background-color: var(--bg);
 }
 .barra-percentagem{
     height: 100%;
-    background-color: var(--destaque-G);
+    background-color: var(--cor02);
 }
 .barra-percentagem-hacker{
     height: 100%;
-    background-color: var(--destaque-A);
+    background-color: var(--cor01);
 }
 .skill-container:nth-child(1){
     margin-bottom: 25px ;
-    border: 1px solid #3bff145b;
-    box-shadow: 0 0 10px 2px #3cff1426;
+    border: 1px solid var(--cor02-borda);
+    box-shadow: 0 0 10px 2px var(--cor02-brilho);
     transition: 0.2s;
 }
 .skill-container:nth-child(2){
-    border: 1px solid #00EEFF5b;
-    box-shadow: 0 0 10px 2px #00EEFF26;
+    border: 1px solid var(--cor01-borda);
+    box-shadow: 0 0 10px 2px var(--cor01-brilho);
     transition: 0.2s;
 }
 @media screen and (min-width:1024px) {
     #HABILIDADES{
         padding: 0px 100px;
         margin-top: 0px;
-        height: 90vh;
+        height: 100vh;
     }
     .skill-container:nth-child(1){
         margin-bottom: 0px;
     }
     .skill-container:nth-child(1):hover{
-        border: 1px solid var(--destaque-G);
+        border: 1px solid var(--cor02);
         box-shadow: 0 0 10px 2px #3bff146c;
     }
     .skill-container:nth-child(2):hover{
-        border: 1px solid #00EEFF;
+        border: 1px solid var(--cor01);
         box-shadow: 0 0 10px 2px #00eeff65;
     }
     .container-skills{

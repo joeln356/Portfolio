@@ -1,0 +1,158 @@
+:root{
+    /*===================
+            FONTE
+    ======================*/
+    
+    --font-Geral: "Sora", sans-serif;;
+    --font-terminal: "Fira Code", monospace;;
+    --font-title: "Chakra Petch", sans-serif;;
+    
+    /*===================
+            FUNDO/BASE
+    ======================*/
+    
+    --bg: #050b0f;
+    --bg2: #091119 /*Fundo Secundario & Body-Cards*/;
+    --bg3: #14222eba /*Header-Cards*/;
+    
+    /*===================
+            TEXTO
+    ======================*/
+    --texto: #94a3b8;
+    --texto-secundario:#fff;
+
+    /*=============================
+            CORES DE DESTAQUE 
+    ===============================*/
+    --cor01: #00EEFF;
+    --cor01-bg: #00EEFF0d;
+    --cor01-borda:#00EEFF5b;
+    --cor01-brilho: #00EEFF26;
+    
+    --cor02: #3CFF14;
+    --cor02-bg: #3CFF140d;
+    --cor02-borda:#3CFF145b;
+    --cor02-brilho: #3CFF1426;
+
+    --cor03:#EF4444;
+    --cor04-borda: #94a3b85b;
+}
+#PROJETOS{
+    padding: 0 15px;
+    margin-top: 50px;
+}
+#PROJETOS > header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-projetos{
+    color: var(--texto-secundario);
+    font-size: 10px;
+    font-family: var(--font-terminal);
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.btn-projetos:active{
+    transform: scale(1.05);
+}
+.btn-projetos > .fa-arrow-right{
+    transition: 0.1s;
+    color: var(--texto-secundario);
+}
+.btn-projetos:active .fa-arrow-right{
+    transform: translateX(2px);
+}
+#PROJETOS > header > .projeto-title > .corN{
+    color: var(--cor02);
+}
+#PROJETOS .nTitle::after{
+    background-color: var(--cor02);
+    box-shadow: 0 0 12px 3px var(--cor02-brilho);
+}
+.projetos-container{
+    margin-top: 50px;
+}
+.projetos-caixa{
+    border: 1px solid var(--cor04-borda);
+    padding: 20px;
+    background-color: var(--bg2);
+}
+.header-links-projeto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.caixa-projeto-header{
+    background-color: var(--bg3);
+    margin: -20px -20px 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.caixa-logo{
+    background-color: var(--bg);
+    padding: 0.375rem /* 6px*/;
+    border: 1px solid var(--cor04-borda);
+    border-radius: 3px;
+}
+.link-preview{
+    display: flex;
+    gap: 0.9375rem /* 16px */;
+    align-items: center;
+    
+}
+.link-preview > a{
+    font-size: 1.0625rem /* 17px */;
+}
+.link-preview > a :active{
+    color: var(--cor02);
+}
+.projeto-titulo{
+    color: var(--texto-secundario);
+    font-family: var(--font-title);
+    font-size: 20px;
+}
+.caixa-projeto-header > p {
+    font-size: 12px;
+    font-family: var(--font-terminal);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bola {
+    display: block;
+    background-color: var(--cor03);
+    height:5px;
+    width: 5px;
+    border-radius: 50%;
+}
+.projetos-caixa > main{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+footer{
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+}
+.tag{
+    font-family: var(--font-terminal);
+    color: var(--cor02);
+    background-color: var(--cor02-bg);
+    border: 1px solid var(--cor02-borda);
+    padding: 2px 15px;
+    font-weight: 600;
+}
+@media screen and (min-width:1280px) {
+    #PROJETOS{
+        padding: 0px 100px;
+    }
+    .btn-projetos{
+        font-size: 13px;
+    }
+}
