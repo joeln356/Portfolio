@@ -121,7 +121,7 @@ nav{
         font-weight: 500;
     }
     nav {
-        padding: 0 100px;
+        padding: 0 70px;
         height: 70px;
     }
     #MENU {
@@ -176,6 +176,10 @@ nav{
     }
 }
 @media screen and (min-width: 1280px) {
+    nav {
+        padding: 0 100px;
+        height: 70px;
+    }
     #MENU{
         font-size: 0.95rem;
     }

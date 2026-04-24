@@ -127,7 +127,7 @@
 }
 @media screen and (min-width:1024px) {
     #HABILIDADES{
-        padding: 0px 100px;
+        padding: 0px 70px;
         margin-top: 0px;
         height: 100vh;
     }
@@ -149,6 +149,9 @@
     }
 }
 @media screen and (min-width:1280px) {
+    #HABILIDADES{
+        padding: 0px 100px;
+    }
     .skill-header{
         font-size: 1.40rem;
     }

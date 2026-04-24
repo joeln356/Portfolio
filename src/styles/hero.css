@@ -157,7 +157,7 @@
 }
 @media screen and (min-width: 1024px) {
     #hero-fundo{
-        padding: 0px 100px;
+        padding: 0px 70px;
     }
     #terminal{
         font-size: 0.95rem;
@@ -180,6 +180,9 @@
     }
 }
 @media screen and (min-width: 1280px){
+    #hero-fundo{
+        padding: 0px 100px;
+    }
     .sla-mano{
         width: 80%;
     }
