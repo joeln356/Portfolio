@@ -44,11 +44,13 @@
     --cor01-bg: #00EEFF0d;
     --cor01-borda:#00EEFF5b;
     --cor01-brilho: #00EEFF26;
+    --cor01-active: #00EEFF47;
     
     --cor02: #3CFF14;
     --cor02-bg: #3CFF140d;
     --cor02-borda:#3CFF145b;
     --cor02-brilho: #3CFF1426;
+    --cor02-active: #3bff1431;
 
     --cor03:#EF4444;
     --cor04-borda: #94a3b85b;
@@ -67,6 +69,10 @@ body{
 }
 .fa-code{
     color: var(--cor02);
+}
+.fa-bug{
+    color: var(--cor01);
+    font-size: 18px;
 }
 @media screen and (min-width: 1024px) {
     .nTitle > .title {

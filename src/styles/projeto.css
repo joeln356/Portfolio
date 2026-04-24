@@ -48,11 +48,12 @@
 }
 .btn-projetos{
     color: var(--texto-secundario);
-    font-size: 10px;
+    font-size: 11px;
     font-family: var(--font-terminal);
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     transition: 0.1s;
+    text-decoration: none;
 }
 .btn-projetos:active{
     transform: scale(1.05);
@@ -75,9 +76,49 @@
     margin-top: 50px;
 }
 .projetos-caixa{
-    border: 1px solid var(--cor04-borda);
     padding: 20px;
     background-color: var(--bg2);
+    margin-bottom: 20px;
+}
+.projetos-caixa:nth-child(1){
+    border: 1px solid var(--cor02-borda);
+    box-shadow: 0 0 12px 3px var(--cor02-brilho);
+}
+.projetos-caixa:nth-child(2){
+    border: 1px solid var(--cor01-borda);
+    box-shadow: 0 0 12px 3px var(--cor01-brilho);
+}
+.projetos-caixa:nth-child(3){
+    border: 1px solid var(--cor02-borda);
+    box-shadow: 0 0 12px 3px var(--cor02-brilho);
+}
+.projetos-caixa:nth-child(4){
+    border: 1px solid var(--cor01-borda);
+    box-shadow: 0 0 12px 3px var(--cor01-brilho);
+}
+.projetos-caixa:nth-child(5){
+    border: 1px solid var(--cor02-borda);
+    box-shadow: 0 0 12px 3px var(--cor02-brilho);
+}
+.projetos-caixa:nth-child(6){
+    border: 1px solid var(--cor01-borda);
+    box-shadow: 0 0 12px 3px var(--cor01-brilho);
+}
+
+.projetos-caixa:nth-child(2) > footer > .tag{
+    color: var(--cor01);
+    background-color: var(--cor01-active);
+    border: 1px solid var(--cor01-borda);
+}
+.projetos-caixa:nth-child(4) > footer > .tag{
+    color: var(--cor01);
+    background-color: var(--cor01-active);
+    border: 1px solid var(--cor01-borda);
+}
+.projetos-caixa:nth-child(6) > footer > .tag{
+    color: var(--cor01);
+    background-color: var(--cor01-active);
+    border: 1px solid var(--cor01-borda);
 }
 .header-links-projeto{
     display: flex;
@@ -97,6 +138,11 @@
     padding: 0.375rem /* 6px*/;
     border: 1px solid var(--cor04-borda);
     border-radius: 3px;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .link-preview{
     display: flex;
@@ -137,13 +183,14 @@
 }
 footer{
     display: flex;
+    flex-wrap: wrap;
     font-size: 12px;
     gap: 10px;
 }
 .tag{
     font-family: var(--font-terminal);
     color: var(--cor02);
-    background-color: var(--cor02-bg);
+    background-color: var(--cor02-active);
     border: 1px solid var(--cor02-borda);
     padding: 2px 15px;
     font-weight: 600;
