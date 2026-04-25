@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="src/styles/hero.css">
     <link rel="stylesheet" href="src/styles/habilidade.css">
     <link rel="stylesheet" href="src/styles/projeto.css">
+    <link rel="stylesheet" href="src/styles/contacto.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
     <link rel="shortcut icon" href="public/images/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -30,7 +32,6 @@
                     <li class="nav-li"><span class="menu-barra">/</span> SOBRE</li>
                     <li class="nav-li"><span class="menu-barra">/</span> HABILIDADES</li>
                     <li class="nav-li"><span class="menu-barra">/</span> PROJETOS</li>
-                    <li class="nav-li"><span class="menu-barra">/</span> EXPERIÊNCIA</li>
                     <li class="nav-li"><span class="menu-barra">/</span> CONTACTO</li>
                 </ul>
             </div>
@@ -78,7 +79,7 @@
                     <article class="card">
                         <div class="card-logo"><i class="fa-solid fa-bullseye"></i></div>
                         <p class="card-titulo">TRYHACKME</p>
-                        <div class="card-numero">Top 2%</div>
+                        <div class="card-numero">Top 75%</div>
                         <p class="card-footer1">Hacker Rank</p>
                         <span class="cornerr top-right"></span>
                         <span class="cornerr bottom-left"></span>
@@ -337,9 +338,61 @@
                 </div>
             </section>
         </section>
-        <section id="EXPERIÊNCIA"></section>
-        <section id="CONTACTO"></section>
+        <section id="CONTACTO">
+           
+            <header>
+                <div>04. Qual é o próximo alvo?</div>
+                <h2 class="title">Vamos Conversar</h2>
+                <p>Aberto a estágios em cibersegurança, freelas de pentest, desenvolvimento web e colaborações em projetos open-source.</p>
+            </header>
+            <section id="container-contacto">
+                <form action="https://formsubmit.co/joelndala356@gmail.com" method="POST" id="form">
+                    <label for="name">&ltNome&gt.</label>
+                    <input type="text" name="name" id="name" required placeholder="John Doe">
+
+                    <label for="email">&ltEmail&gt.</label>
+                    <input type="email" name="email" id="email" required placeholder="John@exemplo.com">
+
+                    <label for="message">&ltMensagem&gt.</label>
+                    <input type="hidden" name="_captcha" value="false">
+                    <textarea name="message" id="message" placeholder="Olá, gostaria de falar sobre..."></textarea>
+                    <button type="submit" id="enviar"> <i class="fa-regular fa-paper-plane"></i> ENVIAR MENSAGEM</button>
+                </form>
+                
+                <section class="contactos">
+                    <a href="https://github.com/joeln356" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/joel-ndala-a28606379/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://wa.me/244949389044" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Whatsapp
+                    </a>
+                    <a href="https://tryhackme.com/p/joelndala356" target="_blank">
+                        <div>THM</div>
+                        TryHackMe
+                    </a>
+                    <a href="https://profile.hackthebox.com/profile/019d985c-a941-706f-b692-e61dcaf9cbc5" target="_blank">
+                        <div>HTB</div>
+                        HackTheBox
+                    </a>
+                    <a href="#form">
+                        <i class="fa-regular fa-envelope"></i> 
+                        E-mail
+                    </a>
+                </section>
+            </section>
+        </section>
     </main>
+    <footer>
+        <div><a href="#" target="_self" id="logo"><i class="fa-solid fa-terminal logo-terminal"></i>JO<span class="destaque-g">E</span>L</a></div>
+        <div>
+            &copy 2026 Joel <span></span> Code by day, hack by night 
+        </div>
+    </footer>
     <script src="src/scripts/main.js"></script>
 </body>
 </html>

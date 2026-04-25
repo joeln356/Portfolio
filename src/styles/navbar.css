@@ -32,7 +32,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0px 15px;
-    height: 50px;
+    height: 70px;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -136,7 +136,7 @@ nav{
     #MENU > ul {
         all: unset;
         display: flex;
-        gap: 20px;           /* espaço entre os itens - ajuste como quiser */
+        gap: 60px;
         padding: 0;
         margin: 0;
     }

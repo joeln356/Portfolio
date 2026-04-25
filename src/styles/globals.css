@@ -67,7 +67,7 @@ body{
 .fa-terminal{
     color: var(--cor02);
 }
-.fa-code{
+.fa-code, .fa-paper-plane{
     color: var(--cor02);
 }
 .fa-bug{
