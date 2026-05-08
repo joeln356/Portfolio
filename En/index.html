@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="public/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/hero.css">
+    <link rel="stylesheet" href="/src/css/about.css">
+    <link rel="stylesheet" href="/src/css/skills.css">
+    <link rel="stylesheet" href="/src/css/contact.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/projetos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>porfolio</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="main-nav" aria-label="Navegação principal">
+
+        <a href="/" class="main-nav__logo">
+          <i class="fa-solid fa-terminal main-nav__logo-icon"></i>
+          JO<span class="main-nav__logo-highlight">E</span>L
+        </a>
+
+        <button class="main-nav__toggle" aria-label="Abrir menu">
+          <span class="main-nav__toggle-line"></span>
+          <span class="main-nav__toggle-line"></span>
+          <span class="main-nav__toggle-line"></span>
+        </button>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#HOME" class="main-nav__link">
+              <span class="main-nav__separator">/</span> HOME
+            </a>
+          </li>
+
+          <li class="main-nav__item">
+            <a href="#SOBRE" class="main-nav__link">
+              <span class="main-nav__separator">/</span> ABOUT
+            </a>
+          </li>
+
+          <li class="main-nav__item">
+            <a href="#HABILIDADES" class="main-nav__link">
+              <span class="main-nav__separator">/</span> SKILLS
+            </a>
+          </li>
+
+          <li class="main-nav__item">
+            <a href="#PROJETOS" class="main-nav__link">
+              <span class="main-nav__separator">/</span> PROJECTS
+            </a>
+          </li>
+
+          <li class="main-nav__item">
+            <a href="#CONTACTO" class="main-nav__link">
+                <span class="main-nav__separator">/</span> CONTACTS
+            </a>
+          </li>
+
+          <div class="Edioma">
+            <span><i class="fa-solid fa-globe"></i> Lang:</span>
+            <a href="/">PT</a>
+            <a href="" style="border-color: #3CFF14; background-color: #3CFF140d; color: #3CFF14;">EN</a>
+          </div>
+        </ul>
+        
+      </nav>
+    </header>
+
+    <main>
+      <section id="HOME" class="hero">
+        <div class="hero__background">
+          <div class="hero__content">
+            
+            <div class="hero__terminal">
+              <i class="fa-solid fa-terminal"></i>
+              <span class="hero__terminal-text">root@joel:~# ./init_portfolio.sh</span>
+            </div>
+
+            <h1 class="hero__title">
+              JOEL | <span class="hero__title-highlight">Front-End Developer</span>
+            </h1>
+
+            <p class="hero__description">
+              <span class="hero__role">Web Dev • Pentest Learner</span><br>
+              I build applications from scratch with security in mind and explore vulnerabilities in existing ones
+            </p>
+
+            <div class="hero__actions">
+              
+              <a href="#PROJETOS" class="btn btn--primary hero__btn-projects dec-up-left">
+                VIEW PROJECTS <i class="fa-regular fa-eye"></i>
+                <span class="corner corner--top-right" style="color: #3CFF14;"></span>
+                <span class="corner corner--bottom-left" style="color: #3CFF14;"></span>
+              </a>
+
+              <a href="/src/downloads/CV_EN.pdf" class="btn btn--secondary hero__btn-cv dec-up-left" download>
+                DOWNLOAD CV <i class="fa-solid fa-download"></i>
+                <span class="corner corner--top-right" style="color: #00EEFF;"></span>
+                <span class="corner corner--bottom-left" style="color: #00EEFF;"></span>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section id="SOBRE" class="about-section">
+  
+        <header class="about-section__header">
+          <h2 class="section-title section-title--numbered" id="sobre">
+            <span class="section-title__index" style="color: #3CFF14;">01.</span>
+            <span class="section-title__text">About Me</span>
+          </h2>
+        </header>
+
+        <div class="about-section__container">
+          
+          <article class="about-section__bio">
+            <p class="about-section__paragraph">
+              I am a Computer Science student passionate about the intersection between software development and cybersecurity. My journey started by building web applications, but quickly evolved into understanding how to break and secure them.
+            </p>
+            <br>
+            <p class="about-section__paragraph">
+              I believe in the <strong class="about-section__highlight">Secure-by-Design</strong> philosophy. It is not enough for code to simply work; it must withstand adversaries in an ever-evolving threat landscape. That’s why I combine my Full-Stack skills with penetration testing methodologies.
+            </p>
+            <br>
+            <p class="about-section__paragraph">
+              When I’m not coding or configuring Docker containers, you can find me hunting for vulnerabilities in Bug Bounty programs, participating in CTF (Capture The Flag) competitions, or exploring machines on HackTheBox and TryHackMe.
+            </p>
+          </article>
+
+          <aside class="about-section__stats about-section__stats--animated">
+            
+            <article class="stats-card stats-card--tryhackme">
+              <div class="stats-card__icon">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <p class="stats-card__title">TRYHACKME</p>
+              <div class="stats-card__value">Top 75%</div>
+              <p class="stats-card__meta" style="color: #3CFF14;">Hacker Rank</p>
+              <span class="corner corner--top-right" style="color: #3CFF14;"></span>
+              <span class="corner corner--bottom-left" style="color: #3CFF14;"></span>
+            </article>
+
+            <article class="stats-card stats-card--hackthebox">
+              <div class="stats-card__icon">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <p class="stats-card__title">HACKTHEBOX</p>
+              <div class="stats-card__value">Level 5</div>
+              <p class="stats-card__meta" style="color: #00EEFF;">Beginner</p>
+              <span class="corner corner--top-right" style="color: #00EEFF;"></span>
+              <span class="corner corner--bottom-left" style="color: #00EEFF;"></span>
+            </article>
+
+            <article class="stats-card stats-card--ctf">
+              <div class="stats-card__icon">
+                <i class="fa-solid fa-flag"></i>
+              </div>
+              <p class="stats-card__title">CTFTIME</p>
+              <div class="stats-card__value">50+</div>
+              <p class="stats-card__meta" style="color: #EF4444;">Completed Events</p>
+              <span class="corner corner--top-right"></span>
+              <span class="corner corner--bottom-left"></span>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section id="HABILIDADES" class="skills-section">
+
+        <header class="skills-section__header">
+          <h2 class="section-title section-title--numbered" id="skill">
+            <span class="section-title__index" style="color: #00EEFF;">02.</span>
+            <span class="section-title__text">Skills</span>
+          </h2>
+        </header>
+
+        <div class="skills-section__container">
+
+          <!-- Web Development -->
+          <article class="skills-card skills-card--frontend">
+
+            <span class="corner corner--top-right" style="color: #3CFF14;"></span>
+            <span class="corner corner--bottom-left" style="color: #3CFF14;"></span>
+
+            <header class="skills-card__header">
+              <i class="fa-solid fa-code"></i>
+              <span class="skills-card__title">Web Development</span>
+            </header>
+
+            <ul class="skills-card__list">
+
+              <li class="skill-item">
+                <div class="skill-item__header skill-item__header--spaced">
+                  <span class="skill-item__name">React</span>
+                  <span class="skill-item__value" style="color: #3CFF14;">80%</span>
+                </div>
+                <div class="skill-item__bar">
+                  <div class="skill-item__progress" data-value="80"></div>
+                </div>
+              </li>
+
+              <li class="skill-item">
+                <div class="skill-item__header">
+                  <span class="skill-item__name">JavaScript</span>
+                  <span class="skill-item__value" style="color: #3CFF14;">67%</span>
+                </div>
+                <div class="skill-item__bar">
+                  <div class="skill-item__progress" data-value="67"></div>
+                </div>
+              </li>
+
+              <li class="skill-item">
+                <div class="skill-item__header">
+                  <span class="skill-item__name">Node.js</span>
+                  <span class="skill-item__value" style="color: #3CFF14;">74%</span>
+                </div>
+                <div class="skill-item__bar">
+                  <div class="skill-item__progress" data-value="74"></div>
+                </div>
+              </li>
+
+              <li class="skill-item">
+                <div class="skill-item__header">
+                  <span class="skill-item__name">HTML & CSS</span>
+                  <span class="skill-item__value" style="color: #3CFF14;">95%</span>
+                </div>
+                <div class="skill-item__bar">
+                  <div class="skill-item__progress" data-value="95"></div>
+                </div>
+              </li>
+
+              <li class="skill-item">
+                <div class="skill-item__header">
+                  <span class="skill-item__name">Next.js</span>
+                  <span class="skill-item__value" style="color: #3CFF14;">84%</span>
+                </div>
+                <div class="skill-item__bar">
+                  <div class="skill-item__progress" data-value="84"></div>
+                </div>
+              </li>
+
+              <li class="skill-item">
+                <div class="skill-item__header">
+                  <span class="skill-item__name">TypeScript</span>
+                  <span class="skill-item__value" style="color: #3CFF14;">73%</span>
+                </div>
+                <div class="skill-item__bar">
+                  <div class="skill-item__progress" data-value="63"></div>
+                </div>
+              </li>
+
+            </ul>
+          </article>
+
+          <!-- Cybersecurity -->
+          <article class="skills-card skills-card--security">
+
+            <span class="corner corner--top-right" style="color: #00EEFF;"></span>
+            <span class="corner corner--bottom-left" style="color: #00EEFF;"></span>
+
+            <header class="skills-card__header">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span class="skills-card__title">Cybersecurity</span>
+            </header>
+
+            <ul class="skills-card__list">
+
+              <li class="skill-item skill-item--security">
+                <div class="skill-item__header skill-item__header--spaced">
+                  <span class="skill-item__name">Linux & Bash</span>
+                  <span class="skill-item__value" style="color: #00EEFF;">60%</span>
+                </div>
+                <div class="skill-item__bar">
+                  <div class="skill-item__progress skill-item__progress--security" data-value="60"></div>
+                </div>
+              </li>
+
+              <li class="skill-item skill-item--security">
+                <div class="skill-item__header">
+                  <span class="skill-item__name">Python Scripting</span>
+                  <span class="skill-item__value" style="color: #00EEFF;">80%</span>
+                </div>
+                <div class="skill-item__bar">
+                  <div class="skill-item__progress skill-item__progress--security" data-value="80"></div>
+                </div>
+              </li>
+
+              <li class="skill-item skill-item--security">
+                <div class="skill-item__header">
+                  <span class="skill-item__name">Web Penetration Testing</span>
+                  <span class="skill-item__value" style="color: #00EEFF;">25%</span>
+                </div>
+                <div class="skill-item__bar">
+                  <div class="skill-item__progress skill-item__progress--security" data-value="25"></div>
+                </div>
+              </li>
+
+              <li class="skill-item skill-item--security">
+                <div class="skill-item__header">
+                  <span class="skill-item__name">Wi-Fi Penetration Testing</span>
+                  <span class="skill-item__value" style="color: #00EEFF;">5%</span>
+                </div>
+                <div class="skill-item__bar">
+                  <div class="skill-item__progress skill-item__progress--security" data-value="5"></div>
+                </div>
+              </li>
+
+              <li class="skill-item skill-item--security">
+                <div class="skill-item__header">
+                  <span class="skill-item__name">Android Penetration Testing</span>
+                  <span class="skill-item__value" style="color: #00EEFF;">2%</span>
+                </div>
+                <div class="skill-item__bar">
+                  <div class="skill-item__progress skill-item__progress--security" data-value="2"></div>
+                </div>
+              </li>
+
+              <li class="skill-item skill-item--security">
+                <div class="skill-item__header">
+                  <span class="skill-item__name">Network Traffic Analysis</span>
+                  <span class="skill-item__value" style="color: #00EEFF;">1%</span>
+                </div>
+                <div class="skill-item__bar">
+                  <div class="skill-item__progress skill-item__progress--security" data-value="1"></div>
+                </div>
+              </li>
+
+            </ul>
+          </article>
+
+        </div>
+      </section>
+      <section id="CONTACTO" class="contact-section">
+
+      <header class="contact-section__header">
+        <p class="contact-section__subtitle">04. What is the next target?</p>
+        <h2 class="contact-section__title">Let's Talk</h2>
+        <p class="contact-section__description">
+          Open to cybersecurity internships, pentest freelancing, web development, and open-source project collaborations.
+        </p>
+      </header>
+
+      <div class="contact-section__container">
+
+        <!-- Form -->
+        <form 
+          action="https://formsubmit.co/b9f45e66c8fc582f6ad9de4b87b43c90" 
+          method="POST" 
+          class="contact-form" 
+          autocomplete="off"
+        >
+            <label for="contact-name" class="form-field__label">&lt;Name&gt;</label>
+            <input 
+              type="text" 
+              name="name" 
+              id="contact-name" 
+              class="form-field__input" 
+              required 
+              placeholder="John Doe"
+            >
+            <span class="form-field__error">Name must be at least 2 characters</span>
+
+            <label for="contact-email" class="form-field__label">&lt;Email&gt;</label>
+            <input 
+              type="email" 
+              name="email" 
+              id="contact-email" 
+              class="form-field__input" 
+              required 
+              placeholder="john@example.com"
+            >
+            <span class="form-field__error">Invalid email</span>     
+
+            <label for="contact-message" class="form-field__label">&lt;Message&gt;</label>
+            <input type="hidden" name="_captcha" value="false">
+            <textarea 
+              name="message" 
+              id="contact-message" 
+              class="form-field__textarea" 
+              placeholder="Hello, I would like to talk about..."
+            ></textarea>
+            <span class="form-field__error">Message must be at least 10 characters</span>
+
+          <button type="submit" class="btn btn--primary contact-form__submit">
+            <i class="fa-regular fa-paper-plane" style="margin-right:5px;"></i>
+            SEND MESSAGE
+          </button>
+
+        </form>
+        
+        <!-- Contact links -->
+        <aside class="contact-links">
+
+          <a href="https://github.com/joeln356" target="_blank" class="contact-links__item">
+            <i class="fa-brands fa-github"></i>
+            <span class="contact-link-name">GitHub</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/joel-ndala-a28606379/" target="_blank" class="contact-links__item">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span class="contact-link-name">LinkedIn</span>
+          </a>
+
+          <a href="https://wa.me/244949389044" target="_blank" class="contact-links__item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="contact-link-name">WhatsApp</span>
+          </a>
+
+          <a href="https://tryhackme.com/p/joelndala356" target="_blank" class="contact-links__item contact-links__item--badge">
+            <span class="contact-links__badge">THM</span>
+            <span class="contact-link-name">TryHackMe</span>
+          </a>
+
+          <a href="https://profile.hackthebox.com/profile/019d985c-a941-706f-b692-e61dcaf9cbc5" target="_blank" class="contact-links__item contact-links__item--badge">
+            <span class="contact-links__badge">HTB</span>
+            <span class="contact-link-name">HackTheBox</span>
+          </a>
+
+          <a href="#CONTACTO" class="contact-links__item">
+            <i class="fa-regular fa-envelope"  style="color: #3CFF14;"></i>
+            <span style="color: #3CFF14;" class="contact-link-name">Email</span>
+          </a>
+
+        </aside>
+
+      </div>
+    </section>
+    </main>
+    <footer id="footer-section">
+  <div class="parte-de-cima">
+
+    <!-- 1st DIV -->
+    <div>
+      <a href="/" class="main-nav__logo logo-footer" style="display: block;">
+        <i class="fa-solid fa-terminal main-nav__logo-icon"></i>
+        JO<span class="main-nav__logo-highlight">E</span>L
+      </a>
+      <p class="texto-footer">
+        Web Developer focused on security. Building robust applications and discovering vulnerabilities since 2025.
+      </p>
+    </div>
+
+    <!-- 2nd DIV (NAV) -->
+    <div class="footer-section-nav">
+      <div class="palavra-nav-footer">NAVIGATION</div>
+      <ul class="lista-footer-nav">
+        <li><a href="#HOME" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> HOME</a></li>
+        <li><a href="#SOBRE" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> ABOUT</a></li>
+        <li><a href="#HABILIDADES" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> SKILLS</a></li>
+        <li><a href="#PROJETOS" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> PROJECTS</a></li>
+        <li><a href="#CONTACTO" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> CONTACT</a></li>
+      </ul>
+    </div>
+
+    <!-- 3rd DIV -->
+    <div class="footer-section-conectar">
+      <div class="footer-contec">CONNECT</div>
+      <ul class="lista-footer-nav">
+        <li><a href="#" class="lista-footer-nav-link"><i class="fa-brands fa-github" style="color:#00EEFF;"></i> GitHub</a></li>
+        <li><a href="#" class="lista-footer-nav-link"><i class="fa-brands fa-linkedin-in" style="color:#00EEFF;"></i> LinkedIn</a></li>
+        <li><a href="#" class="lista-footer-nav-link"><i class="fa-regular fa-envelope" style="color:#00EEFF;"></i> Email</a></li>
+        <li><a href="#" class="lista-footer-nav-link"><i class="fa-brands fa-discord" style="color:#00EEFF;"></i> Discord</a></li>
+        <li> <a href="https://wa.me/244949389044" target="_blank" class="lista-footer-nav-link footer-destaque-wa" > <i class="fa-brands fa-whatsapp" style="color: #3CFF14;"></i> WhatsApp</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="footer-section-text">&copy; 2026 Joel. All rights reserved.</div>
+</footer>
+    <script src="/src/main.js"></script>
+  </body>
+</html>

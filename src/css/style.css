@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+        font-family: var(--font-Geral);
+        color: var(--texto);
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        scrollbar-width: thin;
+        scrollbar-color: #555 transparent;
+}
+
+/* Chrome, Edge, Opera */
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #555;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #777;
+}
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+body{
+        background-color: var(--bg);
+}
+:root{
+        /*===================
+                FONTE
+        ======================*/
+    
+    --font-Geral: "Sora", sans-serif;;
+    --font-terminal: "Fira Code", monospace;;
+    --font-title: "Chakra Petch", sans-serif;;
+    
+    /*===================
+            FUNDO/BASE
+    ======================*/
+    
+    --bg: #050b0f;
+    --bg-menu: #050b0ff7;
+    --bg2: #091119 /*Fundo Secundario & Body-Cards*/;
+    --bg3: #14222eba /*Header-Cards*/;
+    
+    /*===================
+            TEXTO
+    ======================*/
+    --texto: #94a3b8;
+    --texto-secundario:#fff;
+
+    /*=============================
+            CORES DE DESTAQUE 
+    ===============================*/
+    --cor01: #00EEFF;
+    --cor01-bg: #00EEFF0d;
+    --cor01-borda:#00EEFF5b;
+    --cor01-brilho: #00EEFF26;
+    --cor01-active: #00EEFF47;
+    
+    --cor02: #3CFF14;
+    --cor02-bg: #3CFF140d;
+    --cor02-borda:#3CFF145b;
+    --cor02-brilho: #3CFF1426;
+    --cor02-active: #3bff1431;
+
+    --cor03:#EF4444;
+    --cor04-borda: #94a3b85b;
+
+}
+/*Icones*/
+
+.fa-bullseye, 
+.fa-terminal,
+.fa-code,
+.fa-paper-plane{
+    color: var(--cor02);
+}
+.fa-trophy,
+.fa-shield-halved{
+    color: var(--cor01);
+}
+.fa-flag{
+    color: var(--cor03);
+}
+
+.dec-up-left::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        border-top: 2px solid;
+        border-left: 2px solid;
+}
+.dec-up-left::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 5px;
+        height: 5px;
+        border-bottom: 2px solid;
+        border-right: 2px solid;
+}
+.corner{
+        position: absolute;
+        width: 7px;
+        height: 7px;
+}
+.corner--top-right{
+        top: 0;
+        right: 0;
+        border-top: 2px solid;
+        border-right: 2px solid;
+}
+.corner--bottom-left{
+        bottom: 0;
+        left: 0;
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+}
+.section-title{
+    font-weight: normal;
+    font-size: 1rem;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+}
+.section-title::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 65px;
+    height: 4px;
+}
+.section-title__text{
+    font-family: var(--font-title);
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: var(--texto-secundario);
+}
+.section-title__index{
+    font-family: var(--font-terminal);
+    
+}
+ul{
+        list-style: none;
+}
