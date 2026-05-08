@@ -150,4 +150,7 @@ textarea{
         padding: 0 100px;
         padding-bottom: 50px;
     }
+    input{
+        font-size: 14px;
+    }
 }
