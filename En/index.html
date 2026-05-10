@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="shortcut icon" href="public/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/css/header.css">
     <link rel="stylesheet" href="/src/css/hero.css">
@@ -19,7 +19,7 @@
     <header class="site-header">
       <nav class="main-nav" aria-label="Navegação principal">
 
-        <a href="/" class="main-nav__logo">
+        <a href="/index.html" class="main-nav__logo">
           <i class="fa-solid fa-terminal main-nav__logo-icon"></i>
           JO<span class="main-nav__logo-highlight">E</span>L
         </a>
@@ -33,44 +33,44 @@
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="#HOME" class="main-nav__link">
-              <span class="main-nav__separator">/</span> HOME
+              <span class="main-nav__separator">/</span> INÍCIO
             </a>
           </li>
 
           <li class="main-nav__item">
             <a href="#SOBRE" class="main-nav__link">
-              <span class="main-nav__separator">/</span> ABOUT
+              <span class="main-nav__separator">/</span> SOBRE
             </a>
           </li>
 
           <li class="main-nav__item">
             <a href="#HABILIDADES" class="main-nav__link">
-              <span class="main-nav__separator">/</span> SKILLS
+              <span class="main-nav__separator">/</span> HABILIDADES
             </a>
           </li>
 
           <li class="main-nav__item">
             <a href="#PROJETOS" class="main-nav__link">
-              <span class="main-nav__separator">/</span> PROJECTS
+              <span class="main-nav__separator">/</span> PROJETOS
             </a>
           </li>
 
           <li class="main-nav__item">
             <a href="#CONTACTO" class="main-nav__link">
-                <span class="main-nav__separator">/</span> CONTACTS
+              <span class="main-nav__separator">/</span> CONTACTO
             </a>
           </li>
 
           <div class="Edioma">
-            <span><i class="fa-solid fa-globe"></i> Lang:</span>
-            <a href="/">PT</a>
-            <a href="" style="border-color: #3CFF14; background-color: #3CFF140d; color: #3CFF14;">EN</a>
+            <span><i class="fa-solid fa-globe"></i> Líng:</span>
+            <a href="/index.html" style="border-color: #3CFF14; background-color: #3CFF140d; color: #3CFF14;">PT</a>
+            <a href="En/">EN</a>
           </div>
         </ul>
         
       </nav>
     </header>
-
+    
     <main>
       <section id="HOME" class="hero">
         <div class="hero__background">
@@ -82,108 +82,106 @@
             </div>
 
             <h1 class="hero__title">
-              JOEL | <span class="hero__title-highlight">Front-End Developer</span>
+              JOEL | <span class="hero__title-highlight">Desenvolvedor Front-End</span>
             </h1>
 
             <p class="hero__description">
-              <span class="hero__role">Web Dev • Pentest Learner</span><br>
-              I build applications from scratch with security in mind and explore vulnerabilities in existing ones
+              <span class="hero__role">Dev Web • Pentest Learner</span><br>
+              Construo aplicações do zero com segurança em mente e encontro falhas nas que já existem
             </p>
 
             <div class="hero__actions">
               
               <a href="#PROJETOS" class="btn btn--primary hero__btn-projects dec-up-left">
-                VIEW PROJECTS <i class="fa-regular fa-eye"></i>
+                VER PROJETOS <i class="fa-regular fa-eye"></i>
                 <span class="corner corner--top-right" style="color: #3CFF14;"></span>
                 <span class="corner corner--bottom-left" style="color: #3CFF14;"></span>
               </a>
 
-              <a href="/src/downloads/CV_EN.pdf" class="btn btn--secondary hero__btn-cv dec-up-left" download>
-                DOWNLOAD CV <i class="fa-solid fa-download"></i>
+              <a href="/src/downloads/CV.pdf" class="btn btn--secondary hero__btn-cv dec-up-left" download>
+                BAIXAR CV <i class="fa-solid fa-download"></i>
                 <span class="corner corner--top-right" style="color: #00EEFF;"></span>
                 <span class="corner corner--bottom-left" style="color: #00EEFF;"></span>
               </a>
-
             </div>
-
           </div>
         </div>
       </section>
+
       <section id="SOBRE" class="about-section">
   
         <header class="about-section__header">
           <h2 class="section-title section-title--numbered" id="sobre">
             <span class="section-title__index" style="color: #3CFF14;">01.</span>
-            <span class="section-title__text">About Me</span>
+            <span class="section-title__text">Sobre Mim</span>
           </h2>
         </header>
 
-        <div class="about-section__container">
+      <div class="about-section__container">
+        
+        <article class="about-section__bio">
+          <p class="about-section__paragraph">
+            Sou um estudante de Ciência da Computação apaixonado pela interseção entre desenvolvimento de software e cibersegurança. Minha jornada começou construindo aplicações web, mas rapidamente evoluiu para entender como quebrá-las e protegê-las.
+          </p>
+          <br>
+          <p class="about-section__paragraph">
+            Acredito na filosofia <strong class="about-section__highlight">Secure-by-Design</strong>. Não basta apenas que o código funcione; ele deve resistir a adversários em um cenário de ameaças em constante evolução. Por isso, combino minhas habilidades de Desenvolvimento Web com metodologias de pentest.
+          </p>
+          <br>
+          <p class="about-section__paragraph">
+            Quando não estou codando ou configurando containers Docker, você me encontra caçando vulnerabilidades em programas de Bug Bounty, participando de competições CTF (Capture The Flag) ou explorando máquinas no HackTheBox e TryHackMe.
+          </p>
+        </article>
+
+        <aside class="about-section__stats about-section__stats--animated">
           
-          <article class="about-section__bio">
-            <p class="about-section__paragraph">
-              I am a Computer Science student passionate about the intersection between software development and cybersecurity. My journey started by building web applications, but quickly evolved into understanding how to break and secure them.
-            </p>
-            <br>
-            <p class="about-section__paragraph">
-              I believe in the <strong class="about-section__highlight">Secure-by-Design</strong> philosophy. It is not enough for code to simply work; it must withstand adversaries in an ever-evolving threat landscape. That’s why I combine my Full-Stack skills with penetration testing methodologies.
-            </p>
-            <br>
-            <p class="about-section__paragraph">
-              When I’m not coding or configuring Docker containers, you can find me hunting for vulnerabilities in Bug Bounty programs, participating in CTF (Capture The Flag) competitions, or exploring machines on HackTheBox and TryHackMe.
-            </p>
+          <article class="stats-card stats-card--tryhackme">
+            <div class="stats-card__icon">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <p class="stats-card__title" >TRYHACKME</p>
+            <div class="stats-card__value">Top 75%</div>
+            <p class="stats-card__meta" style="color: #3CFF14;">Hacker Rank</p>
+            <span class="corner corner--top-right" style="color: #3CFF14;"></span>
+            <span class="corner corner--bottom-left" style="color: #3CFF14;"></span>
           </article>
 
-          <aside class="about-section__stats about-section__stats--animated">
-            
-            <article class="stats-card stats-card--tryhackme">
-              <div class="stats-card__icon">
-                <i class="fa-solid fa-bullseye"></i>
-              </div>
-              <p class="stats-card__title">TRYHACKME</p>
-              <div class="stats-card__value">Top 75%</div>
-              <p class="stats-card__meta" style="color: #3CFF14;">Hacker Rank</p>
-              <span class="corner corner--top-right" style="color: #3CFF14;"></span>
-              <span class="corner corner--bottom-left" style="color: #3CFF14;"></span>
-            </article>
+          <article class="stats-card stats-card--hackthebox">
+            <div class="stats-card__icon">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <p class="stats-card__title">HACKTHEBOX</p>
+            <div class="stats-card__value">Nível 5</div>
+            <p class="stats-card__meta"  style="color: #00EEFF;">Principiante</p>
+            <span class="corner corner--top-right" style="color: #00EEFF;"></span>
+            <span class="corner corner--bottom-left" style="color: #00EEFF;"></span>
+          </article>
 
-            <article class="stats-card stats-card--hackthebox">
-              <div class="stats-card__icon">
-                <i class="fa-solid fa-trophy"></i>
-              </div>
-              <p class="stats-card__title">HACKTHEBOX</p>
-              <div class="stats-card__value">Level 5</div>
-              <p class="stats-card__meta" style="color: #00EEFF;">Beginner</p>
-              <span class="corner corner--top-right" style="color: #00EEFF;"></span>
-              <span class="corner corner--bottom-left" style="color: #00EEFF;"></span>
-            </article>
+          <article class="stats-card stats-card--ctf">
+            <div class="stats-card__icon">
+              <i class="fa-solid fa-flag"></i>
+            </div>
+            <p class="stats-card__title" >CTFTIME</p>
+            <div class="stats-card__value">50+</div>
+            <p class="stats-card__meta" style="color: #EF4444;">Eventos Concluídos</p>
+            <span class="corner corner--top-right"></span>
+            <span class="corner corner--bottom-left"></span>
+          </article>
+        </aside>
+      </div>
+    </section>
+    <section id="HABILIDADES" class="skills-section">
 
-            <article class="stats-card stats-card--ctf">
-              <div class="stats-card__icon">
-                <i class="fa-solid fa-flag"></i>
-              </div>
-              <p class="stats-card__title">CTFTIME</p>
-              <div class="stats-card__value">50+</div>
-              <p class="stats-card__meta" style="color: #EF4444;">Completed Events</p>
-              <span class="corner corner--top-right"></span>
-              <span class="corner corner--bottom-left"></span>
-            </article>
-          </aside>
-        </div>
-      </section>
-
-      <section id="HABILIDADES" class="skills-section">
-
-        <header class="skills-section__header">
-          <h2 class="section-title section-title--numbered" id="skill">
-            <span class="section-title__index" style="color: #00EEFF;">02.</span>
-            <span class="section-title__text">Skills</span>
-          </h2>
-        </header>
+      <header class="skills-section__header">
+        <h2 class="section-title section-title--numbered" id="skill">
+          <span class="section-title__index" style="color: #00EEFF;">02.</span>
+          <span class="section-title__text">Habilidades</span>
+        </h2>
+      </header>
 
         <div class="skills-section__container">
 
-          <!-- Web Development -->
+          <!-- Desenvolvimento Web -->
           <article class="skills-card skills-card--frontend">
 
             <span class="corner corner--top-right" style="color: #3CFF14;"></span>
@@ -191,7 +189,7 @@
 
             <header class="skills-card__header">
               <i class="fa-solid fa-code"></i>
-              <span class="skills-card__title">Web Development</span>
+              <span class="skills-card__title">Desenvolvimento Web</span>
             </header>
 
             <ul class="skills-card__list">
@@ -202,7 +200,7 @@
                   <span class="skill-item__value" style="color: #3CFF14;">80%</span>
                 </div>
                 <div class="skill-item__bar">
-                  <div class="skill-item__progress" data-value="80"></div>
+                  <div class="skill-item__progress" data-value="80" ></div>
                 </div>
               </li>
 
@@ -259,7 +257,7 @@
             </ul>
           </article>
 
-          <!-- Cybersecurity -->
+          <!-- Cibersegurança -->
           <article class="skills-card skills-card--security">
 
             <span class="corner corner--top-right" style="color: #00EEFF;"></span>
@@ -267,7 +265,7 @@
 
             <header class="skills-card__header">
               <i class="fa-solid fa-shield-halved"></i>
-              <span class="skills-card__title">Cybersecurity</span>
+              <span class="skills-card__title">Cibersegurança</span>
             </header>
 
             <ul class="skills-card__list">
@@ -331,149 +329,386 @@
                   <div class="skill-item__progress skill-item__progress--security" data-value="1"></div>
                 </div>
               </li>
-
             </ul>
           </article>
+        </div>
+      </section>
+      <section id="PROJETOS" class="projects-section">
+
+        <header class="projects-section__header">
+          
+          <h2 class="section-title section-title--numbered">
+            <span class="section-title__index" style="color: #3CFF14;">03.</span>
+            <span class="section-title__text">Projetos</span>
+          </h2>
+
+          <a 
+            href="https://github.com/joeln356?tab=repositories" 
+            target="_blank" 
+            class=" btn--link projects-section__cta"
+          >
+            VER TODOS <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+        </header>
+
+        <div class="projects-section__grid">
+
+          <!-- Project Card -->
+          <article class="project-card project-card--dev" id="card-1">
+            <header class="project-card__header">
+
+              <div class="project-card__meta">
+                <div class="project-card__icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="project-card__links">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+
+              <h3 class="project-card__title">TechNova</h3>
+
+              <p class="project-card__status">
+                <span class="project-card__dot"></span>
+                Landing Page
+              </p>
+
+            </header>
+
+            <p class="project-card__description">
+              Landing page desenvolvida para praticar conceitos de design e responsividade.
+            </p>
+
+            <footer class="project-card__footer">
+              <ul class="project-card__tags">
+                <li class="project-card__tag">JavaScript</li>
+                <li class="project-card__tag">HTML</li>
+                <li class="project-card__tag">CSS</li>
+              </ul>
+            </footer>
+            <span class="corner corner--top-right" style="color: #3CFF14;"></span>
+            <span class="corner corner--bottom-left" style="color: #3CFF14;"></span>
+          </article>
+
+          <article class="project-card project-card--dev" id="card-1">
+            <header class="project-card__header">
+
+              <div class="project-card__meta">
+                <div class="project-card__icon">
+                  <i class="fa-solid fa-bug" style="color: #00EEFF;"></i>
+                </div>
+                <div class="project-card__links">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+
+              <h3 class="project-card__title">TechNova</h3>
+
+              <p class="project-card__status">
+                <span class="project-card__dot"></span>
+                Landing Page
+              </p>
+
+            </header>
+
+            <p class="project-card__description">
+              Landing page desenvolvida para praticar conceitos de design e responsividade.
+            </p>
+
+            <footer class="project-card__footer">
+              <ul class="project-card__tags">
+                <li class="project-card__tag-hack">JavaScript</li>
+                <li class="project-card__tag-hack">HTML</li>
+                <li class="project-card__tag-hack">CSS</li>
+              </ul>
+            </footer>
+            <span class="corner corner--top-right" style="color: #00EEFF;"></span>
+            <span class="corner corner--bottom-left" style="color: #00EEFF;"></span>
+          </article>
+
+          <article class="project-card project-card--dev" id="card-1">
+            <header class="project-card__header">
+
+              <div class="project-card__meta">
+                <div class="project-card__icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="project-card__links">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+
+              <h3 class="project-card__title">TechNova</h3>
+
+              <p class="project-card__status">
+                <span class="project-card__dot"></span>
+                Landing Page
+              </p>
+
+            </header>
+
+            <p class="project-card__description">
+              Landing page desenvolvida para praticar conceitos de design e responsividade.
+            </p>
+
+            <footer class="project-card__footer">
+              <ul class="project-card__tags">
+                <li class="project-card__tag">JavaScript</li>
+                <li class="project-card__tag">HTML</li>
+                <li class="project-card__tag">CSS</li>
+              </ul>
+            </footer>
+            <span class="corner corner--top-right" style="color: #3CFF14;"></span>
+            <span class="corner corner--bottom-left" style="color: #3CFF14;"></span>
+          </article>
+
+
+          <article class="project-card project-card--dev" id="card-1">
+            <header class="project-card__header">
+
+              <div class="project-card__meta">
+                <div class="project-card__icon">
+                  <i class="fa-solid fa-bug" style="color: #00EEFF;"></i>
+                </div>
+                <div class="project-card__links">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+
+              <h3 class="project-card__title">TechNova</h3>
+
+              <p class="project-card__status">
+                <span class="project-card__dot"></span>
+                Landing Page
+              </p>
+
+            </header>
+
+            <p class="project-card__description">
+              Landing page desenvolvida para praticar conceitos de design e responsividade.
+            </p>
+
+            <footer class="project-card__footer">
+              <ul class="project-card__tags">
+                <li class="project-card__tag-hack">JavaScript</li>
+                <li class="project-card__tag-hack">HTML</li>
+                <li class="project-card__tag-hack">CSS</li>
+              </ul>
+            </footer>
+            <span class="corner corner--top-right" style="color: #00EEFF;"></span>
+            <span class="corner corner--bottom-left" style="color: #00EEFF;"></span>
+          </article>
+          <!-- Project Card -->
+          <article class="project-card project-card--security">
+            <span class="corner corner--top-right" style="color: #3CFF14;"></span>
+            <span class="corner corner--bottom-left" style="color: #3CFF14;"></span>
+            <header class="project-card__header">
+
+              <div class="project-card__meta">
+                <div class="project-card__icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+
+                <div class="project-card__links">
+                  <a href="#" class="project-card__link">
+                    <i class="fa-regular fa-file-lines"></i>
+                  </a>
+                  <a href="https://joeln356.github.io/TechNova/" target="_blank" class="project-card__link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="project-card__title">Página de receitas - HomeChef</h3>
+
+              <p class="project-card__status">
+                <span class="project-card__dot"></span>
+                Identificadas x tipos de falhas
+              </p>
+
+            </header>
+
+            <p class="project-card__description">
+              Aplicação web responsiva e laboratório para práticas de pentest para busca e visualização de receitas, com foco em usabilidade, responsividade e boas práticas de segurança.
+            </p>
+
+            <footer class="project-card__footer">
+              <ul class="project-card__tags">
+                <li class="project-card__tag">JavaScript</li>
+                <li class="project-card__tag">React</li>
+                <li class="project-card__tag">Next.js</li>
+                <li class="project-card__tag">API Integration</li>
+              </ul>
+            </footer>
+
+          </article>
+
+          <!-- Repete o mesmo padrão para os outros cards -->
 
         </div>
       </section>
       <section id="CONTACTO" class="contact-section">
 
-      <header class="contact-section__header">
-        <p class="contact-section__subtitle">04. What is the next target?</p>
-        <h2 class="contact-section__title">Let's Talk</h2>
-        <p class="contact-section__description">
-          Open to cybersecurity internships, pentest freelancing, web development, and open-source project collaborations.
-        </p>
-      </header>
+        <header class="contact-section__header">
+          <p class="contact-section__subtitle">04. Qual é o próximo alvo?</p>
+          <h2 class="contact-section__title">Vamos Conversar</h2>
+          <p class="contact-section__description">
+            Aberto a estágios em cibersegurança, freelas de pentest, desenvolvimento web e colaborações em projetos open-source.
+          </p>
+        </header>
 
-      <div class="contact-section__container">
+        <div class="contact-section__container">
 
-        <!-- Form -->
-        <form 
-          action="https://formsubmit.co/b9f45e66c8fc582f6ad9de4b87b43c90" 
-          method="POST" 
-          class="contact-form" 
-          autocomplete="off"
-        >
-            <label for="contact-name" class="form-field__label">&lt;Name&gt;</label>
-            <input 
-              type="text" 
-              name="name" 
-              id="contact-name" 
-              class="form-field__input" 
-              required 
-              placeholder="John Doe"
-            >
-            <span class="form-field__error">Name must be at least 2 characters</span>
+          <!-- Formulário -->
+          <form 
+            action="https://formsubmit.co/b9f45e66c8fc582f6ad9de4b87b43c90" 
+            method="POST" 
+            class="contact-form" 
+            autocomplete="off"
+          >
+              <label for="contact-name" class="form-field__label">&lt;Nome&gt;</label>
+              <input 
+                type="text" 
+                name="name" 
+                id="contact-name" 
+                class="form-field__input" 
+                required 
+                placeholder="John Doe"
+              >
+              <span class="form-field__error">Nome deve ter no mínimo 2 caracteres</span>
+              <label for="contact-email" class="form-field__label">&lt;Email&gt;</label>
+              <input 
+                type="email" 
+                name="email" 
+                id="contact-email" 
+                class="form-field__input" 
+                required 
+                placeholder="john@example.com"
+              >
+              <span class="form-field__error">E-mail inválido</span>     
+              <label for="contact-message" class="form-field__label">&lt;Mensagem&gt;</label>
+              <input type="hidden" name="_captcha" value="false">
+              <textarea 
+                name="message" 
+                id="contact-message" 
+                class="form-field__textarea" 
+                placeholder="Olá, gostaria de falar sobre..."
+              ></textarea>
+              <span class="form-field__error">Mensagem deve ter no mínimo 10 caracteres</span>
+            
 
-            <label for="contact-email" class="form-field__label">&lt;Email&gt;</label>
-            <input 
-              type="email" 
-              name="email" 
-              id="contact-email" 
-              class="form-field__input" 
-              required 
-              placeholder="john@example.com"
-            >
-            <span class="form-field__error">Invalid email</span>     
+            <button type="submit" class="btn btn--primary contact-form__submit">
+              <i class="fa-regular fa-paper-plane" style="margin-right:5px;"></i>
+              ENVIAR MENSAGEM
+            </button>
 
-            <label for="contact-message" class="form-field__label">&lt;Message&gt;</label>
-            <input type="hidden" name="_captcha" value="false">
-            <textarea 
-              name="message" 
-              id="contact-message" 
-              class="form-field__textarea" 
-              placeholder="Hello, I would like to talk about..."
-            ></textarea>
-            <span class="form-field__error">Message must be at least 10 characters</span>
+          </form>
+          
+          <!-- Links de contacto -->
+          <aside class="contact-links">
 
-          <button type="submit" class="btn btn--primary contact-form__submit">
-            <i class="fa-regular fa-paper-plane" style="margin-right:5px;"></i>
-            SEND MESSAGE
-          </button>
+            <a href="https://github.com/joeln356" target="_blank" class="contact-links__item">
+              <i class="fa-brands fa-github"></i>
+              <span class="contact-link-name">GitHub</span>
+            </a>
 
-        </form>
-        
-        <!-- Contact links -->
-        <aside class="contact-links">
+            <a href="https://www.linkedin.com/in/joel-ndala-a356ojkb" target="_blank" class="contact-links__item">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span class="contact-link-name">LinkedIn</span>
+            </a>
 
-          <a href="https://github.com/joeln356" target="_blank" class="contact-links__item">
-            <i class="fa-brands fa-github"></i>
-            <span class="contact-link-name">GitHub</span>
-          </a>
+            <a href="https://wa.me/244949389044" target="_blank" class="contact-links__item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span class="contact-link-name">WhatsApp</span>
+            </a>
 
-          <a href="https://www.linkedin.com/in/joel-ndala-a28606379/" target="_blank" class="contact-links__item">
-            <i class="fa-brands fa-linkedin-in"></i>
-            <span class="contact-link-name">LinkedIn</span>
-          </a>
+            <a href="https://tryhackme.com/p/joelndala356" target="_blank" class="contact-links__item contact-links__item--badge">
+              <span class="contact-links__badge">THM</span>
+              <span class="contact-link-name">TryHackMe</span>
+            </a>
 
-          <a href="https://wa.me/244949389044" target="_blank" class="contact-links__item">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span class="contact-link-name">WhatsApp</span>
-          </a>
+            <a href="https://profile.hackthebox.com/profile/019d985c-a941-706f-b692-e61dcaf9cbc5" target="_blank" class="contact-links__item contact-links__item--badge">
+              <span class="contact-links__badge">HTB</span>
+              <span class="contact-link-name">HackTheBox</span>
+            </a>
 
-          <a href="https://tryhackme.com/p/joelndala356" target="_blank" class="contact-links__item contact-links__item--badge">
-            <span class="contact-links__badge">THM</span>
-            <span class="contact-link-name">TryHackMe</span>
-          </a>
+            <a href="#CONTACTO" class="contact-links__item">
+              <i class="fa-regular fa-envelope" style="color: #3CFF14;"></i>
+              <span style="color: #3CFF14;" class="contact-link-name">E-mail</span>
+            </a>
+          </aside>
+        </div>
+      </section>
+      <div class="overlay">
+            <div class="overlay-content">
+              <div class="botao-overlay">
+                <div class="project-card__icon overlayx" id="x1">
+                  <i class="fa-solid fa-x"></i>
+                </div>
+                
+              </div>
+              <div class="thumbneil"> <img src="src/assets/technova.png" alt=""></div>
+              <h3 class="project-card__title title-overlay">TechNova</h3>
+              <p class="project-card__status status-overlay">
+                <span class="project-card__dot"></span>
+                  Landing Page
+              </p>
+              <p class="project-overlay-description" style="border-top: 1px solid #94a3b85b;">
+                Landing page desenvolvida com foco na prática de design moderno, responsividade e experiência do usuário. O projeto foi criado como exercício de estudo e aperfeiçoamento técnico, explorando layouts flexíveis, adaptação para diferentes telas, organização semântica, animações suaves e componentes interativos, sem finalidade funcional ou comercial real.
+              </p>
+              
+              <div class="overlay-links-web">
+                
+                <a href="https://github.com/joeln356/TechNova" target="_blank" class="overlay-link-web"><i class="fa-brands fa-github icon-overlay-web"></i> Código Fonte</a>
+                <a href="https://joeln356.github.io/TechNova/" target="_blank" class="overlay-link-web"><i class="fa-regular fa-eye icon-overlay-web"></i> Live Demo</a>
+              </div>
+            </div>
 
-          <a href="https://profile.hackthebox.com/profile/019d985c-a941-706f-b692-e61dcaf9cbc5" target="_blank" class="contact-links__item contact-links__item--badge">
-            <span class="contact-links__badge">HTB</span>
-            <span class="contact-link-name">HackTheBox</span>
-          </a>
-
-          <a href="#CONTACTO" class="contact-links__item">
-            <i class="fa-regular fa-envelope"  style="color: #3CFF14;"></i>
-            <span style="color: #3CFF14;" class="contact-link-name">Email</span>
-          </a>
-
-        </aside>
-
-      </div>
-    </section>
+            
+          </div>
     </main>
     <footer id="footer-section">
-  <div class="parte-de-cima">
+      <div class="parte-de-cima">
 
-    <!-- 1st DIV -->
-    <div>
-      <a href="/" class="main-nav__logo logo-footer" style="display: block;">
-        <i class="fa-solid fa-terminal main-nav__logo-icon"></i>
-        JO<span class="main-nav__logo-highlight">E</span>L
-      </a>
-      <p class="texto-footer">
-        Web Developer focused on security. Building robust applications and discovering vulnerabilities since 2025.
-      </p>
-    </div>
+        <!-- 1ª DIV -->
+        <div>
+          <a href="/" class="main-nav__logo logo-footer" style="display: block;">
+            <i class="fa-solid fa-terminal main-nav__logo-icon"></i>
+            JO<span class="main-nav__logo-highlight">E</span>L
+          </a>
+          <p class="texto-footer">
+            Desenvolvedor Web com foco em segurança. Construindo aplicações robustas e encontrando vulnerabilidades desde 2025.
+          </p>
+        </div>
 
-    <!-- 2nd DIV (NAV) -->
-    <div class="footer-section-nav">
-      <div class="palavra-nav-footer">NAVIGATION</div>
-      <ul class="lista-footer-nav">
-        <li><a href="#HOME" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> HOME</a></li>
-        <li><a href="#SOBRE" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> ABOUT</a></li>
-        <li><a href="#HABILIDADES" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> SKILLS</a></li>
-        <li><a href="#PROJETOS" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> PROJECTS</a></li>
-        <li><a href="#CONTACTO" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> CONTACT</a></li>
-      </ul>
-    </div>
+        <!-- 2ª DIV (NAV) -->
+        <div class="footer-section-nav">
+          <div class="palavra-nav-footer">NAVEGAÇÃO</div>
+          <ul class="lista-footer-nav">
+            <li><a href="#HOME" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> INÍCIO</a></li>
+            <li><a href="#SOBRE" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> SOBRE</a></li>
+            <li><a href="#HABILIDADES" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> HABILIDADES</a></li>
+            <li><a href="#PROJETOS" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> PROJETOS</a></li>
+            <li><a href="#CONTACTO" class="lista-footer-nav-link"><span style="color: #3CFF14;">/</span> CONTACTO</a></li>
+          </ul>
+        </div>
 
-    <!-- 3rd DIV -->
-    <div class="footer-section-conectar">
-      <div class="footer-contec">CONNECT</div>
-      <ul class="lista-footer-nav">
-        <li><a href="#" class="lista-footer-nav-link"><i class="fa-brands fa-github" style="color:#00EEFF;"></i> GitHub</a></li>
-        <li><a href="#" class="lista-footer-nav-link"><i class="fa-brands fa-linkedin-in" style="color:#00EEFF;"></i> LinkedIn</a></li>
-        <li><a href="#" class="lista-footer-nav-link"><i class="fa-regular fa-envelope" style="color:#00EEFF;"></i> Email</a></li>
-        <li><a href="#" class="lista-footer-nav-link"><i class="fa-brands fa-discord" style="color:#00EEFF;"></i> Discord</a></li>
-        <li> <a href="https://wa.me/244949389044" target="_blank" class="lista-footer-nav-link footer-destaque-wa" > <i class="fa-brands fa-whatsapp" style="color: #3CFF14;"></i> WhatsApp</a></li>
-      </ul>
-    </div>
+        <!-- 3ª DIV -->
+        <div class="footer-section-conectar">
+          <div class="footer-contec">CONECTE-SE</div>
+          <ul class="lista-footer-nav">
+            <li><a href="https://github.com/joeln356" target="_blank" class="lista-footer-nav-link"><i class="fa-brands fa-github" style="color:#00EEFF;"></i> Github</a></li>
+            <li><a href="https://www.linkedin.com/in/joel-ndala-a356ojkb" target="_blank" class="lista-footer-nav-link"><i class="fa-brands fa-linkedin-in" style="color:#00EEFF;"></i> Linkedin</a></li>
+            <li><a href="#CONTACTO" class="lista-footer-nav-link"><i class="fa-regular fa-envelope" style="color:#00EEFF;"></i> Email</a></li>
+            <li><a href="/" class="lista-footer-nav-link"><i class="fa-brands fa-discord" style="color:#00EEFF;"></i> Discord</a></li>
+            <li> <a href="https://wa.me/244949389044" target="_blank" class="lista-footer-nav-link footer-destaque-wa" > <i class="fa-brands fa-whatsapp" style="color: #3CFF14;"></i> WhatsApp</a></li>
+          </ul>
+        </div>
 
-  </div>
-  <div class="footer-section-text">&copy; 2026 Joel. All rights reserved.</div>
-</footer>
+      </div>
+      <div class="footer-section-text">&copy; 2026 Joel. Todos os direitos reservado.</div>
+    </footer>
     <script src="/src/main.js"></script>
   </body>
 </html>
