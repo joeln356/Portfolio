@@ -6,4 +6,4 @@ Um portfólio web moderno, responsivo e bem organizado, construído para apresen
 
 ## 🚀 Acesse o Portfólio
 
-🔗 **[Ver site ao vivo](https://joeln356.github.io/Portfolio)**
+🔗 **[Ver site ao vivo](https://joeln356.github.io/portfolio/)**
